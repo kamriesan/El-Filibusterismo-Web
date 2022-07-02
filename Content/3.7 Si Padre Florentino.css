@@ -1,0 +1,293 @@
+﻿/**Colors***/
+/**Green #8ba86b***/
+/**Yellow #c6aa3c***/
+/**Red #bc6039***/
+/**Blue #4a6882***/
+
+body {
+margin: 0px;
+cursor: url("Cursor.png"), pointer;
+}
+a {
+url("CursorPointer.png"), pointer;	}
+/*****************************************Scroll Bar Color*****************************************/
+
+::-webkit-scrollbar {
+width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 3px black;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #8ba86b;
+border-radius: 0.5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #c6aa3c;
+
+}
+
+/*****************************************Scroll Bar Color*****************************************/
+/*****************************************Top Nav*****************************************/
+
+
+#hidenavbar {
+background-color: darkred;
+position: fixed;
+width: 105%;
+height: 15%;
+margin-top: -10px;
+margin-left: -60px;
+display: block;
+transition: 0.1s;
+cursor: url("Cursor.png"), pointer;
+
+}
+#hidenavbar a {
+float: center;
+color: #cdad2d;
+list-style: none;
+padding-left: 28px ;
+alignment: center;
+padding-right: 25px ;
+text-decoration: none;
+font-size: 15px;
+padding-top: 10px;
+text-transform: uppercase;
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+
+#hidenavbar a:hover {
+background-color: none;
+color: #ffcc00;
+text-decoration: none;
+transition: 1s ease;
+cursor: url("CursorPointer.png"
+), pointer;
+
+}
+
+}
+
+
+li { 
+display: table-cell; 
+position: relative; 
+cursor: url("CursorPointer.png"
+), pointer;
+
+}
+li {
+letter-spacing: 0.1em;
+display: inline-block;
+position: relative;
+padding-left: 10px;
+padding-right: 10px;
+cursor: url("CursorPointer.png"
+), pointer;	
+
+}
+li:after {
+background: none repeat scroll 0 0 transparent;
+bottom:0px;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #ffcc00;
+transition: width 0.09s ease 0.08s, left 0.09s ease 0.08s;
+width: 0;
+cursor: url("CursorPointer.png"), pointer;	
+
+}
+li:hover:after { 
+width: 100%; 
+left: 0; 
+cursor: url("CursorPointer.png"
+), pointer;	
+
+}
+@media screen and (max-height: 300px) {
+ul {
+margin-top: 50px;
+
+
+}
+}
+/*****************************************Top Nav*****************************************/
+
+/*****************************************Top Nav Drop Down*****************************************/
+
+
+.dropbtn {
+	cursor: url("CursorPointer.png"
+), pointer;
+    transition: 1s;
+}
+.dropdown {
+float: center;
+overflow: hidden;
+cursor:  url("CursorPointer.png"
+), pointer;}
+
+
+.dropdown:hover{
+cursor: url("CursorPointer.png"
+), pointer;}
+
+
+
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: black;
+padding: 10px 5px;
+background-color : inherit;
+font-family: inherit;
+alignment: center;
+cursor: url("CursorPointer.png"
+), pointer;
+
+
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 187px;
+margin-left: -10px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+alignment: center;
+cursor: url("CursorPointer.png"
+), pointer;
+  transform: translateY(0);
+
+}
+
+.dropdown-content a {
+font-size: 1px;
+float: none;
+color: #cdad2d;
+padding: 2px 10px;
+text-decoration: none;
+display: block;
+text-align: center;
+cursor: url("CursorPointer.png"
+), pointer;
+}
+
+.dropdown-content a:hover {
+background-color: #cdad2d;
+cursor: url("CursorPointer.png"
+), pointer;
+
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+transition-duration: 5s;
+
+
+}
+
+/*****************************************Top Nav Drop Down*****************************************/
+
+
+.dropbtn {
+	cursor: url("CursorPointer.png"
+), pointer;
+    transition: 1s;
+}
+.dropdown {
+float: center;
+overflow: hidden;
+cursor:  url("CursorPointer.png"
+), pointer;}
+
+
+.dropdown:hover{
+cursor: url("CursorPointer.png"
+), pointer;}
+
+
+
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: black;
+padding: 10px 5px;
+background-color : inherit;
+font-family: inherit;
+alignment: center;
+cursor: url("CursorPointer.png"
+), pointer;
+
+
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 187px;
+margin-left: -10px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+alignment: center;
+cursor: url("CursorPointer.png"
+), pointer;
+  transform: translateY(0);
+
+}
+
+.dropdown-content a {
+font-size: 1px;
+float: none;
+color: #cdad2d;
+padding: 2px 10px;
+text-decoration: none;
+display: block;
+text-align: center;
+cursor: url("CursorPointer.png"
+), pointer;
+}
+
+.dropdown-content a:hover {
+background-color: #cdad2d;
+cursor: url("CursorPointer.png"
+), pointer;
+
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+transition-duration: 5s;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************Top Nav Drop Down*****************************************/
