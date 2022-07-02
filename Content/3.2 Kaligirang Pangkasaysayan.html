@@ -1,0 +1,977 @@
+﻿<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="3.2 Kaligirang Pangkasaysayan.css">
+<title>El Filibusterismo | Kaligirang Kasaysayan</title>
+<link rel="icon" href="Quill Pen Icon.png">
+
+<style>
+
+ /*==========Global==========*/
+/*==========Basics==========*/
+html {
+scroll-behavior: smooth;
+}
+body {
+background-color: #832e2e;
+}
+
+
+/*==========Sections==========*/
+
+.header {
+text-align: center;
+position: relative;
+z-index: 1;
+background-image: linear-gradient(to bottom, lighten(@header-background, 15%) 0%, @header-background 100%);
+}
+.header .master-head {
+padding: 7% 30px;
+background-color: #832e2e;
+}
+.header .page-title {
+padding: 0 30px 0 30px;
+font-size: 22px;
+color: #FFF;
+
+}
+.header .page-description {
+margin-top: 400px;
+max-width: 1000px;
+font-size: 28px;
+color: #FFF;
+}
+.header .scroll-button {
+color: #FFF;
+font-size: 20px;
+padding: 15px 20px 15px 20px;
+display: inline-block;
+background: #cdad2d;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.header .scroll-button:hover {
+background: #F7CA18;}
+.header .scroll-button:active {
+background: #194c53;
+}
+.main-content {
+margin: 0px auto;
+position: relative;
+}
+.main-content .section-inner,
+.main-content .post-wrapper {
+*zoom: 1;
+}
+.main-content .section-inner:before,
+.main-content .post-wrapper:before,
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+content: "";
+display: table;
+}
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+clear: both;
+}
+.section .section-inner {
+margin: 0px auto;
+width: 1024px;
+}
+@media only screen {
+.section .section-inner {
+width: auto;
+max-width: 1024px;
+}
+}
+/*==========Stem==========*/
+.stem-wrapper {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 50%;
+}
+.stem-wrapper.color-yellow .stem-background {
+background: #cdad2d;
+}
+.stem-wrapper.color-green .stem-background {
+background: #35C189;
+}
+.stem-wrapper.color-white .stem-background {
+background: #FFF;
+}
+.stem-wrapper .stem,
+.stem-wrapper .stem-background {
+position: absolute;
+top: 0px;
+left: -30px;
+width: 60px;
+}
+.stem-wrapper .stem {
+background: none;
+height: 100%;
+}
+.stem-wrapper .stem-background {
+background: #cdad2d;
+height: 50%;
+transition-duration: 5s;
+}
+.stem-padding,
+.single-stem-icon {
+width: 60px;
+height: 0px;
+margin: 0px auto;
+background: none;
+}
+.single-stem-icon.scroll-to-top {
+cursor: pointer;
+background-image: url('file:///E:/ICT%20x%20Fil/Transferrrrrrrrr/2%20Paglalathala/2%20Paglathala/Scrolltop.png');
+}
+/*==========Post wrapper ==========*/
+.post-wrapper {
+*zoom: 1;
+}
+.post-wrapper:before,
+.post-wrapper:after {
+content: "";
+display: table;
+}
+.post-wrapper:after {
+clear: both;
+}
+.post-wrapper .post {
+position: relative;
+width: 432px;
+padding: 0px 0px 60px 0px;
+clear: both;
+opacity: 1;
+-webkit-perspective: 1000px;
+perspective: 1000px;
+}
+.post-wrapper .post.hidden .post-content {
+-webkit-transform: translateY(100px) rotateX(30deg);
+transform: translateY(100px) rotateX(30deg);
+opacity: 0;
+}
+.post-wrapper .post:hover .post-content,
+.post-wrapper .post.active .post-content {
+opacity: 1;
+}
+.post-wrapper .post:hover .post-content .meta,
+.post-wrapper .post.active .post-content .meta {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post:nth-child(even) {
+float: right;
+}
+.post-wrapper .post:nth-child(odd) {
+float: left;
+}
+.post-wrapper .post:nth-child(even) .stem-overlay {
+left: -110px;
+}
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+right: -110px;
+}
+.post-wrapper .post.Quilllink-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quillink.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Calendar-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Calendar.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Quill-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quill.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post .stem-overlay {
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 60px;
+}
+.post-wrapper .post .stem-overlay .icon {
+background: transparent no-repeat center center;
+height: 60px;
+width: 60px;
+cursor: pointer;
+}
+.post-wrapper .post .stem-overlay .stem-mask {
+position: absolute;
+top: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: url('stem-mask.png') repeat-y center top;
+}
+.post-wrapper .post .post-content {
+opacity: 0.3;
+transition-duration: 0.4s;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post .post-content .meta {
+color: rgba(255, 255, 255, 0.3);
+margin: 0px 0px 15px 0px;
+letter-spacing: 0px;
+opacity: 0;
+transition-duration: 1s;
+transition-delay: 0.2s;
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+}
+.post-wrapper .post .post-content .post-title {
+font-size: 32px;
+line-height: 60px;
+margin: 0px 0px 15px 0px;
+}
+/*==========Media queries==========*/
+@media only screen and (max-width: 1080px) {
+.main-content,
+.main-content .section-inner {
+max-width: none;
+}
+.stem-wrapper {
+left: 80px;
+}
+.stem-padding,
+.single-stem-icon {
+margin: 0px;
+float: left;
+margin-left: 50px;
+}
+.post-wrapper .post,
+.post-wrapper .post:nth-child(even),
+.post-wrapper .post:nth-child(odd) {
+width: auto;
+margin-left: 110px;
+float: none;
+}
+.post-wrapper .post .stem-overlay,
+.post-wrapper .post:nth-child(even) .stem-overlay,
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+left: -60px;
+right: auto;
+}
+.post-wrapper .post .post-content {
+padding: 0px 50px;
+}
+}
+@media only screen and (max-width: 700px) {
+.header .page-title {
+font-size: 40px;
+}
+.post-wrapper .post {
+margin-left: 90px !important;
+}
+.post-wrapper .post .post-content {
+padding: 0 25px;
+}
+.stem-wrapper {
+left: 60px;
+}
+.stem-padding,
+.single-stem-icon {
+margin-left: 30px;
+}
+}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+VIEW LESS CODE VIEW RESOURCES 1×
+0.5×
+0.25×
+ RERUN
+.style1 {
+color: #fff;
+}
+.style2 {
+font-size: large;
+color: #fff;
+}
+
+
+
+
+/*****************************************Shining Text1*****************************************/
+.mask a{
+position: relative;
+display:block;
+width:621px;
+overflow: under;
+height: 176px;
+text-align:center;
+margin: 50px auto;
+background: ;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+}
+.mask a{
+background-position: -700px 0;
+position: relative;
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.mask a:hover,
+.mask a:focus{
+background-position: 100px 0;
+/*change speed to see in slow motion*/
+transition: all 2s;
+cursor: url("CursorPointer.png"), pointer;
+}
+.mask a::after{
+content:'';
+position: absolute;
+pointer-events: none;
+top:0; left:0; right:0; bottom: 0;
+background: radial-gradient(0 0,circle farthest-side, rgba(255,255,0,0.3) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background-position: inherit;
+-webkit-mask: url("3.2.1 Title.png");
+cursor: url("CursorPointer.png"), pointer;
+
+}
+
+/*****************************************Shining Text1*****************************************/
+.style5 {
+font-family: "Times New Roman", Times, serif;
+}
+.next {
+background-color: #fff;
+color: black;
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+
+.next:hover {
+background-color: grey;
+transition: .5s;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+
+}
+
+a {
+text-decoration: none;
+}
+.style13 {
+margin-left: 40px;
+}
+.style14 {
+margin-left: 80px;
+margin-top: 0px;
+}
+.style15 {
+margin-left: 40px;
+text-align: center;
+font-size: xx-large;
+color: #FFFFFF;
+}
+.style16 {
+margin-left: 40px;
+text-align: center;
+font-size: xx-large;
+color: #FFCC00;
+font-family: "Times New Roman", Times, serif;
+margin-top: 0px;
+}
+.style17 {
+margin-top: 1px;
+}
+.style18 {
+font-family: "Times New Roman", Times, serif;
+font-size: large;
+}
+.style19 {
+margin-left: 40px;
+text-align: left;
+font-size: xx-large;
+color: #FFFFFF;
+font-family: "Times New Roman", Times, serif;
+margin-top: 0px;
+}
+
+.zoomimage-card {
+position: relative;
+top: 0;
+left: 0;
+
+
+}
+
+.style23 {
+font-size: x-large;
+}
+
+.style24 {
+color: #CDAD2D;
+font-size: 45pt;
+text-align: center;
+}
+
+
+.style25 {
+color: #FFFFFF;
+font-size: x-large;
+text-align: center;
+}
+
+
+.style26 {
+				color: #FFCC00;
+				font-size: xx-large;
+				text-align: center;
+}
+
+
+.style27 {
+				color: #FFCC00;
+				text-align: center;
+}
+
+
+.style30 {
+				font-size: xx-large;
+}
+
+
+.style31 {
+				color: #FFCC00;
+				font-size: 29pt;
+}
+
+
+</style>
+</head>
+
+
+
+<!****Nav Bar****!>
+<p></p>
+<div id="hidenavbar" style="z-index: 8"> <Center>
+
+
+<ul><font face="Times New Roman">
+
+<li><div class="dropdown"><a href="2 Paglathala.html">Paglathala</a>
+
+
+<li><div class="dropdown"><a href="3 Mga Aralin.html">Mga &nbsp;Aralin</a>
+
+<div class="dropdown-content"> 
+<a href="3.2 Kaligirang Pangkasaysayan.html" onmousedown="bleep.play()">Aralin 1</a>
+<a href="3.3 Si Basilio.html">Aralin 2</a>
+<a href="3.4 Si Kabesang Tales.html">Aralin 3</a>
+<a href="3.5 Si Juli.html">Aralin 4</a>
+<a href="3.6 Si Isagani.html">Aralin 5</a>
+<a href="3.7 Si Padre Florentino.html">Aralin 6</a>
+<a href="3.8 Si Simoun.html">Aralin 7</a>
+</div> 
+
+</li>
+<a href="../index.html">
+<img alt=Icon src="NavIcon.png" width="200" height=60></a>
+<li><div class="dropdown"><a href="4 Mga Tauhan.html">Mga Tauhan</a>
+
+<div class="dropdown-content"> 
+
+<a href="4 Mga Tauhan.html#Simoun">Simoun</a>
+<a href="4 Mga Tauhan.html#Basilio">Basilio</a>
+<a href="4 Mga Tauhan.html#Isagani">Isagani</a>
+<a href="4 Mga Tauhan.html#Macaraig">Macaraig</a>
+<a href="4 Mga Tauhan.html#Kabesang Tales">Kabesang Tales</a>
+<a href="4 Mga Tauhan.html#Padre Florentino">Padre Florentino</a>
+<a href="4 Mga Tauhan.html#Don Custodio">Don Custodio</a> 
+<a href="4 Mga Tauhan.html#Jograt">Jograt</a>
+<a href="4 Mga Tauhan.html#Paulita Gomez">Paulita Gomez</a>
+<a href="4 Mga Tauhan.html#Juli">Juli</a>
+<a href="4 Mga Tauhan.html#Juanito Pelaez">Juanito Palaez</a>
+<a href="4 Mga Tauhan.html#Donya Victorina">Donya Victorina</a>
+<a href="4 Mga Tauhan.html#Padre Camorra">Padre Camorra</a>
+<a href="4 Mga Tauhan.html#Ben-Zayb">Ben-Zayb</a> 
+<a href="4 Mga Tauhan.html#Placido Penitente">Placido Penitente</a>
+<a href="4 Mga Tauhan.html#Tiburcio de Espadana">Tiburcio de Espadaña</a>
+<a href="4 Mga Tauhan.html#Hermana Penchang">Hermana Penchang</a>
+<a href="4 Mga Tauhan.html#Padre Irene">Padre Irene</a>
+<a href="4 Mga Tauhan.html#Quiroga">Quiroga</a>
+<a href="4 Mga Tauhan.html#Don Timoteo Palaez">Don Timoteo Palaez</a>
+<a href="4 Mga Tauhan.html#Tandang Selo">Tandang Selo</a> 
+<a href="4 Mga Tauhan.html#Padre Fernandez">Padre Fernandez</a>
+<a href="4 Mga Tauhan.html#Sandoval">Sandoval</a>
+<a href="4 Mga Tauhan.html#Hermana Bali">Hermana Bali</a>
+<a href="4 Mga Tauhan.html#Padre Millon">Padre Millon</a>
+<a href="4 Mga Tauhan.html#Tadeo">Tadeo</a>
+<a href="4 Mga Tauhan.html#Leeds">Leeds</a>
+<a href="4 Mga Tauhan.html#Tano">Tano</a> 
+<a href="4 Mga Tauhan.html#Pepay">Pepay</a>
+<a href="4 Mga Tauhan.html#Gobernador Heneral">Gobernador Heneral</a>
+<a href="4 Mga Tauhan.html#Padre Hernando De la Sibyla">Padre Hernando De la 
+Sibyla</a>
+<a href="4 Mga Tauhan.html#Pecson">Pecson</a>
+<a href="4 Mga Tauhan.html#Padre Bernardo Salvi">Padre Bernardo Salvi</a>
+<a href="4 Mga Tauhan.html#Kapitan Tiyago">Kapitan Tiyago</a>
+
+
+</div> 
+
+</li><li><div class="dropdown"><a href="5 Mga Kabanata.html">Saliksikin</a>
+
+<div class="dropdown-content"> 
+<a href="5 Mga Kabanata.html#1">Kabanata 1</a>
+<a href="5 Mga Kabanata.html#2">Kabanata 2</a>
+<a href="5 Mga Kabanata.html#3">Kabanata 3</a>
+<a href="5 Mga Kabanata.html#4">Kabanata 4</a>
+<a href="5 Mga Kabanata.html#5">Kabanata 5</a>
+<a href="5 Mga Kabanata.html#6">Kabanata 6</a>
+<a href="5 Mga Kabanata.html#7">Kabanata 7</a>
+<a href="5 Mga Kabanata.html#8">Kabanata 8</a>
+<a href="5 Mga Kabanata.html#9">Kabanata 9</a>
+<a href="5 Mga Kabanata.html#10">Kabanata 10</a>
+<a href="5 Mga Kabanata.html#11">Kabanata 11</a>
+<a href="5 Mga Kabanata.html#12">Kabanata 12</a>
+<a href="5 Mga Kabanata.html#13">Kabanata 13</a>
+<a href="5 Mga Kabanata.html#14">Kabanata 14</a>
+<a href="5 Mga Kabanata.html#15">Kabanata 15</a>
+<a href="5 Mga Kabanata.html#16">Kabanata 16</a>
+<a href="5 Mga Kabanata.html#17">Kabanata 17</a>
+<a href="5 Mga Kabanata.html#18">Kabanata 18</a>
+<a href="5 Mga Kabanata.html#19">Kabanata 19</a>
+<a href="5 Mga Kabanata.html#20">Kabanata 20</a>
+<a href="5 Mga Kabanata.html#21">Kabanata 21</a>
+<a href="5 Mga Kabanata.html#22">Kabanata 22</a>
+<a href="5 Mga Kabanata.html#23">Kabanata 23</a>
+<a href="5 Mga Kabanata.html#24">Kabanata 24</a>
+<a href="5 Mga Kabanata.html#25">Kabanata 25</a>
+<a href="5 Mga Kabanata.html#26">Kabanata 26</a>
+<a href="5 Mga Kabanata.html#27">Kabanata 27</a>
+<a href="5 Mga Kabanata.html#28">Kabanata 28</a>
+<a href="5 Mga Kabanata.html#29">Kabanata 29</a>
+<a href="5 Mga Kabanata.html#30">Kabanata 30</a>
+<a href="5 Mga Kabanata.html#31">Kabanata 31</a>
+<a href="5 Mga Kabanata.html#32">Kabanata 32</a>
+<a href="5 Mga Kabanata.html#33">Kabanata 33</a>
+<a href="5 Mga Kabanata.html#34">Kabanata 34</a>
+<a href="5 Mga Kabanata.html#35">Kabanata 35</a>
+<a href="5 Mga Kabanata.html#36">Kabanata 36</a>
+<a href="5 Mga Kabanata.html#37">Kabanata 37</a>
+<a href="5 Mga Kabanata.html#38">Kabanata 38</a>
+<a href="5 Mga Kabanata.html#39">Kabanata 39</a>
+
+
+
+</div> 
+
+
+</ul>
+</font>
+</div>
+
+
+</ul>
+</font>
+</div>
+
+<div class="stem-wrapper">
+<div class="stem" style="right: 1311px"></div>
+</div>
+<header class="section header">
+<div class="section-inner">
+
+<div class="master-head" style="height: 1307px">
+<class="page-title"><div class="mask pseudo">
+<a href="#" class="style2" style="left: -59px; top: 138px">
+<img src="3.2.1 Title.png" alt="El Fili" width="780" height="150" />
+</a>
+</div>
+<p class="style13">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<img alt="" src="3.2.2 White.png" width="648" height="654" style="position: absolute; left: 755px; top: 646px" class="style17" ><br><br><br><br>
+</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">
+<img alt="" src="3.2.3 Layunin.jpg" width="643" height="468" style="position: absolute; left: 736px; top: 747px"  ></p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15"  >&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15"  id="magpatuloy">&nbsp;</p>
+<p class="style15" >&nbsp;</p>
+<p class="style16" style="position: relative; left: -18px; top: -14px">
+<strong>PANIMULA SA KALIGIRANG PANGKASAYSAYAN</strong></p>
+
+<p class="style19" style="position: relative; left: -15px; top: -36px">
+<span lang="EN-US" style="font-size: 12.0pt; line-height: 115%;" class="style5">&nbsp;&nbsp;
+</span><span lang="EN-US" style="line-height: 115%;" class="style18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Noong 1887, nailathala ni Dr. Jose Rizal ang una niyang nobela, Noli me Tangere, 
+na nakasulat sa wikang Kastila, na kung saan ay ipinapakita ang mga pang-aabuso 
+ng mga prayle. Nang taong din iyon ay bumalik siya sa Maynila na kung saan ay 
+ipinagbawal na ang Noli at si Rizal ay labis na kinamumuhian ng mga prayle. 
+Noong 1888, bumalik si Rizal sa Europa, kung saan ay isinulat niya ang karugtong 
+ng Noli me Tangere na may pamagat na El Filibusterismo.<span style="mso-spacerun:yes">&nbsp;
+</span>Ito ay nailathala noong 1991. Ngayon ay ating tuklasin ang kasaysayan ng 
+pagkakasulat ng El Filibusterismo.<o:p></o:p></span></p>
+
+<img alt="" src="3.2.4%20Paglalathala.jpg" width="759" height="655" style="position: absolute; left: -3px; top: 647px; z-index: 9;"><p class="style14" style="position: absolute; left: 1097px; top: 1168px">
+&nbsp;<a href="#magpatuloy"><class onclick="topFunction()" class="scroll-button"><font color="black" size="4" face="century gothic"><span class="style5">Magpatuloy</span></button>
+ 
+
+</font></a>
+</p>
+ 
+</div>
+</header>
+</div>
+
+<div id="Banner1" style="width: 856px; height: 413px; position: absolute; left: 148px; top: 1567px;" class="style17">
+&nbsp;<img src="3.2.3banner 1.jpg" width="1139" height="414"></div>
+<p class="style16" style="position: relative; left: 10px; top: 565px; width: 1331px;">
+<strong>
+<img alt="" src="3.2.1 Paunang pagtataya.png" width="1000" height="2000"></strong></p>
+
+
+
+
+
+<table style="width: 80%; left: 155px; top: 4100px; height: 79px;" align="left">
+				<tr>
+								<td><hr>
+<div class="zoomwrapper" style="width: 487px">
+<div class="zoom-effect-container" style="left: -250px; top: 10px; width: 1000px; height: 378px">
+<div class="zoomimage-card" style="left: 0px; top: -0px; width: 1000px; height: 387px;">
+<img src="3.2%20BG.png" width="1000" height="395" class="style10"/>
+</div>
+</div>
+
+
+ </td>
+ 				<tr>
+								<td class="style26"><br> 
+																Balikan ang kasaysayan ng pagkakalathala ng 
+								akdang El Filibusterismo <br>
+								&hellip; </td>
+				</tr>
+ 				<tr>
+								<td class="style26">
+								<p><p><p><p><br>
+								
+								<hr style="height: -12px"></td>
+				</tr>
+<tr> <div class="col-md-3 col-sm-3 col-xs-6" >
+<a href="2 Paglathala.html" class="btn btn-sm animated-button thar-three" style="left: 20px; top: 1135px; width: 120px; height: 20px; z-index: 7">
+<font face='Times New Roman' id="Gawain">
+Balikan</a> </div>
+</div> 
+</tr>
+			
+</table>
+
+
+
+
+
+
+
+
+
+<table style="width: 80%; left: 175px; top: 4834px; height: 79px;" align="left" >
+<tr>
+<td style="height: 65px" colspan="4" class="style24">
+
+MGA GAWAIN
+</td>
+</tr>
+
+<tr>
+<td style="height: 96px" colspan="4" class="style25">
+Maghanda para sa mga gawaing nakatala sa ibaba. Ang ilan ay gagawin sa sagutang papel. Maging alerto dahil mayroon lamang kaunting oras upang masagutan ang mga ito!</td>
+</tr>
+<tr>
+
+<td style="height: 65px; " colspan="4" class="style27">
+<span class="style30">&hellip;</span>
+</div>
+</td>
+
+</tr>
+
+<td style="height: 65px; width: 150px;">
+<div class="col-md-3 col-sm-3 col-xs-6">
+<!-- Modal -->
+<div class="modale" aria-hidden="true">
+<div class="modal-dialog"><p>
+<img alt="" src="3.2 Gawain 1.jpg" width="650" height="500">
+<a href="#" class="modal-close closemodale" aria-hidden="true">&times;</a>
+</div>
+</div>
+</div>
+<!-- /Modal -->
+<a href="#" class="modal modal-big openmodale btn btn-sm animated-button thar-three" style="left: 0px; top: 0px; width: 200px"> <font face='Times New Roman'> Gawain 1 &raquo;</a></p>
+</div>
+</td>
+
+<td style="height: 65px; width: 150px;">
+<div class="col-md-3 col-sm-3 col-xs-6">
+<!-- Modal -->
+<div class="modale2" aria-hidden="true">
+<div class="modal2-dialog"><p>
+<img alt="" src="3.2 Gawain 2.jpg" width="650" height="500">
+<a href="#" class="modal2-close closemodale2" aria-hidden="true">&times;</a>
+</div>
+</div>
+</div>
+<!-- /Modal -->
+<a href="#" class="modal2 modal2-big openmodale2 btn btn-sm animated-button thar-three"style="left: 0px; top: 0px; width: 200px"><font face='Times New Roman'> Gawain 2 &raquo;</a></p>
+</div>
+</td>
+
+<td style="height: 65px; width: 150px;">
+<div class="col-md-3 col-sm-3 col-xs-6">
+<!-- Modal -->
+<div class="modale3" aria-hidden="true">
+<div class="modal3-dialog"><p>
+<img alt="" src="3.2 Gawain 3.jpg" width="650" height="500">
+<a href="#" class="modal3-close closemodale3" aria-hidden="true">&times;</a>
+</div>
+</div>
+</div>
+<!-- /Modal -->
+<a href="#" class="modal3 modal3-big openmodale3 btn btn-sm animated-button thar-three"style="left: 0px; top: 0px; width: 200px"> <font face='Times New Roman'>Gawain 3 &raquo;</a></p>
+</div>
+</td>
+
+<td style="height: 65px; width: 150px;">
+<div class="col-md-3 col-sm-3 col-xs-6">
+<!-- Modal -->
+<div class="modale4" aria-hidden="true">
+<div class="modal4-dialog"><p>
+<img alt="" src="3.2 Gawain 4.jpg" width="650" height="500">
+<a href="#" class="modal4-close closemodale4" aria-hidden="true">&times;</a>
+</div>
+</div>
+</div>
+<!-- /Modal -->
+<a href="#" class="modal4 modal4-big openmodale4 btn btn-sm animated-button thar-three" style="left: 0px; top: 0px; width: 200px"> <font face='Times New Roman'>Pangkatan &raquo;</a></p>
+</div>
+</td></tr>
+
+<tr>
+
+<td style="height: 65px; " colspan="4">
+<hr></td>
+
+</tr>
+
+</table>
+
+
+
+
+
+
+
+<span class="style23"></span>
+ <p class="style16" style="position: relative; left: 10px; top: 1680px; width: 1331px;">
+<strong><br>
+<br>
+<img alt="" src="3.2.1%20Panapos%20na%20pagtataya.png" width="1000" height="2000"></strong></p>
+
+
+
+
+<table style="width: 80%; left: 170px; top: 7300px; height: 543px;" align="left">
+<tr>
+<td style="height: 17px" colspan="2" class="style24">
+
+MGA SAGOT
+<hr></td>
+</tr>
+
+<tr>
+<td style="height: 96px; width: 539px;" class="style25">
+Ikaw ba'y tapos nang magsagot? Sinigurado mo ba ang mga ito? Dito natin masusukat kung tunay na mayroon kang natutunan sa ating aralin. Pindutin ang susi upang malaman ang mga kasagutan!
+<br>
+<span class="style30">&hellip;
+
+</span>
+
+<td style="height: 65px; width: 150px;">
+<div class="col-md-3 col-sm-3 col-xs-6">
+<!-- Modal -->
+<div class="modale5" aria-hidden="true">
+<div class="modal5-dialog"><p>
+<img alt="" src="3.2.7 ANSWER KEYS.jpg" width="650" height="520">
+<a href="#" class="modal5-close closemodale5" aria-hidden="true">&times;</a>
+</div>
+</div>
+</div>
+<!-- /Modal -->
+<a href="#" class="modal5 modal5-big openmodale5"style="left: 0px; top: 0px; width: 200px"> <font face='Times New Roman'>
+<span class="style31"> </span> <div class="zoomwrapper" style="width: 325px">
+<div class="zoom-effect-container" style="left: 0px; top: 0px; width: 325px; height: 325px">
+<div class="zoomimage-card" style="left: 0px; top: 0px; width: 325px; height: 325px;">
+<img src="Susi.png" width="250" height="250" class="style10"> </a>
+</div>
+</div>
+</p>
+</div>
+</td>
+
+
+</td>
+<tr>
+<td style="height: 96px; " class="style25" colspan="2">
+<hr>
+
+
+<a href="3.3 Si Basilio.html" class="btn btn-sm animated-button thar-three" style="left: 356px; top: -102px; width: 334px"><font face='Times New Roman'> Magpatuloy sa susunod na aralin &raquo;</a></td>
+</table>
+
+
+
+<button onclick="topFunction()" id="scrollup" title="Bumalik sa itaas">&#x25B4;</button>
+
+
+<embed src="yourmusicfile.mid" autostart="true" loop="true"
+width="2" height="0">
+</embed>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+document.getElementById("scrollup").style.display = "block";
+} else {
+document.getElementById("scrollup").style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<script>
+/*Scroll down hide*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+document.getElementById("hidenavbar").style.top = "0";
+} else {
+document.getElementById("hidenavbar").style.top = "-100px";
+}
+}
+</script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+$('.openmodale').click(function (e) {
+ e.preventDefault();
+ $('.modale').addClass('opened');
+});
+$('.closemodale').click(function (e) {
+ e.preventDefault();
+ $('.modale').removeClass('opened');
+});
+
+</script>
+
+<script>
+
+$('.openmodale2').click(function (e) {
+ e.preventDefault();
+ $('.modale2').addClass('opened2');
+});
+$('.closemodale2').click(function (e) {
+ e.preventDefault();
+ $('.modale2').removeClass('opened2');
+});
+
+</script>
+
+<script>
+
+$('.openmodale3').click(function (e) {
+ e.preventDefault();
+ $('.modale3').addClass('opened3');
+});
+$('.closemodale3').click(function (e) {
+ e.preventDefault();
+ $('.modale3').removeClass('opened3');
+});
+
+</script>
+
+<script>
+
+$('.openmodale4').click(function (e) {
+ e.preventDefault();
+ $('.modale4').addClass('opened4');
+});
+$('.closemodale4').click(function (e) {
+ e.preventDefault();
+ $('.modale4').removeClass('opened4');
+});
+
+</script>
+
+<script>
+
+$('.openmodale5').click(function (e) {
+ e.preventDefault();
+ $('.modale5').addClass('opened5');
+});
+$('.closemodale5').click(function (e) {
+ e.preventDefault();
+ $('.modale5').removeClass('opened5');
+});
+
+</script>
+
+
+
+
+
+</html>
+
+

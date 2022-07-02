@@ -1,0 +1,989 @@
+﻿<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="2 Paglathala.css">
+<title>El Filibusterismo | Paglathala</title>
+<link rel="icon" href="Quill Pen Icon.png">
+
+<style>
+
+body {
+background-color: #832e2e;
+}
+
+
+/*==========Sections==========*/
+
+.header {
+text-align: center;
+position: relative;
+z-index: 1;
+background-image: linear-gradient(to bottom, lighten(@header-background, 15%) 0%, @header-background 100%);
+}
+.header .master-head {
+padding: 7% 30px;
+background-color: #832e2e;
+}
+.header .page-title {
+padding: 0 30px 0 30px;
+font-size: 22px;
+color: #FFF;
+
+}
+.header .page-description {
+margin-top: 400px;
+max-width: 1000px;
+font-size: 28px;
+color: #FFF;
+}
+.header .scroll-button {
+color: #FFF;
+font-size: 20px;
+padding: 15px 20px 15px 20px;
+display: inline-block;
+background: #cdad2d;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.header .scroll-button:hover {
+cursor: url("CursorPointer.png"), pointer;
+background: #F7CA18;}
+.header .scroll-button:active {
+background: #194c53;
+}
+.main-content {
+margin: 0px auto;
+position: relative;
+}
+.main-content .section-inner,
+.main-content .post-wrapper {
+*zoom: 1;
+}
+.main-content .section-inner:before,
+.main-content .post-wrapper:before,
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+content: "";
+display: table;
+}
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+clear: both;
+}
+.section .section-inner {
+margin: 0px auto;
+width: 1024px;
+}
+@media only screen {
+.section .section-inner {
+width: auto;
+max-width: 1024px;
+}
+}
+/*==========Stem==========*/
+.stem-wrapper {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 50%;
+}
+.stem-wrapper.color-yellow .stem-background {
+background: #cdad2d;
+}
+.stem-wrapper.color-green .stem-background {
+background: #35C189;
+}
+.stem-wrapper.color-white .stem-background {
+background: #FFF;
+}
+.stem-wrapper .stem,
+.stem-wrapper .stem-background {
+position: absolute;
+top: 0px;
+left: -30px;
+width: 60px;
+}
+.stem-wrapper .stem {
+background: none;
+height: 100%;
+}
+.stem-wrapper .stem-background {
+background: #cdad2d;
+height: 50%;
+transition-duration: 5s;
+}
+.stem-padding,
+.single-stem-icon {
+width: 60px;
+height: 0px;
+margin: 0px auto;
+background: none;
+}
+.single-stem-icon.scroll-to-top {
+cursor: pointer;
+background-image: url('2%20Paglathala/Scrolltop.png');
+}
+/*==========Post wrapper ==========*/
+.post-wrapper {
+*zoom: 1;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper:before,
+.post-wrapper:after {
+content: "";
+display: table;
+}
+.post-wrapper:after {
+clear: both;
+}
+.post-wrapper .post {
+position: relative;
+width: 432px;
+padding: 0px 0px 60px 0px;
+clear: both;
+opacity: 1;
+-webkit-perspective: 1000px;
+perspective: 1000px;
+}
+.post-wrapper .post.hidden .post-content {
+-webkit-transform: translateY(100px) rotateX(30deg);
+transform: translateY(100px) rotateX(30deg);
+opacity: 0;
+}
+.post-wrapper .post:hover .post-content,
+.post-wrapper .post.active .post-content {
+opacity: 1;
+}
+.post-wrapper .post:hover .post-content .meta,
+.post-wrapper .post.active .post-content .meta {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post:nth-child(even) {
+float: right;
+}
+.post-wrapper .post:nth-child(odd) {
+float: left;
+}
+.post-wrapper .post:nth-child(even) .stem-overlay {
+left: -110px;
+}
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+right: -110px;
+}
+.post-wrapper .post.Quillink-scroll .stem-overlay .icon {
+background-image: url('2.3 Quillink-scroll.png');
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.post-wrapper .post.Calendar-scroll .stem-overlay .icon {
+background-image: url('2.2 Calendar-scroll.png');
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.post-wrapper .post.Quill-scroll .stem-overlay .icon {
+background-image: url('2.3 Quillink-scroll.png');
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.post-wrapper .post.twitter-icon .stem-overlay .icon {
+background-image: url('2.4 Quill-scroll.png');
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.post-wrapper .post .stem-overlay {
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 60px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper .post .stem-overlay .icon {
+background: transparent no-repeat center center;
+height: 60px;
+width: 60px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper .post .stem-overlay .stem-mask {
+position: absolute;
+top: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: url('2.5 stem-mask.png') repeat-y center top;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper .post .post-content {
+opacity: 0.3;
+transition-duration: 0.4s;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post .post-content .meta {
+color: rgba(255, 255, 255, 0.3);
+margin: 0px 0px 15px 0px;
+letter-spacing: 0px;
+opacity: 0;
+transition-duration: 1s;
+transition-delay: 0.2s;
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+}
+.post-wrapper .post .post-content .post-title {
+font-size: 32px;
+line-height: 0px;
+margin: 0px 0px 15px 0px;
+}
+/*==========Media queries==========*/
+@media only screen and (max-width: 1080px) {
+.main-content,
+.main-content .section-inner {
+max-width: none;
+}
+.stem-wrapper {
+left: 80px;
+}
+.stem-padding,
+.single-stem-icon {
+margin: 0px;
+float: left;
+margin-left: 50px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper .post,
+.post-wrapper .post:nth-child(even),
+.post-wrapper .post:nth-child(odd) {
+width: auto;
+margin-left: 110px;
+float: none;
+}
+.post-wrapper .post .stem-overlay,
+.post-wrapper .post:nth-child(even) .stem-overlay,
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+left: -60px;
+right: auto;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.post-wrapper .post .post-content {
+padding: 0px 50px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+}
+@media only screen and (max-width: 700px) {
+.header .page-title {
+font-size: 40px;
+}
+.post-wrapper .post {
+margin-left: 90px !important;
+}
+.post-wrapper .post .post-content {
+padding: 0 25px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.stem-wrapper {
+left: 60px;
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+}
+.stem-padding,
+.single-stem-icon {
+margin-left: 30px;
+}
+}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+VIEW LESS CODE VIEW RESOURCES 1×
+0.5×
+0.25×
+ RERUN
+.style1 {
+				color: #fff;
+}
+.style2 {
+				font-size: large;
+				color: #fff;
+}
+
+
+
+.style3 {
+				font-family: "Times New Roman", Times, serif;
+				color: #FFFFFF;
+				font-size: x-large;
+}
+
+
+
+
+/*****************************************Shining Text1*****************************************/
+.mask a{
+position: relative;
+display:block;
+width:780px;
+overflow: under;
+height: 150px;
+text-align:center;
+margin: 50px auto;
+background: ;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+}
+.mask a{
+background-position: -800px 0;
+position: relative;
+cursor: cursor: url("CursorPointer.png"), pointer;
+
+
+}
+.mask a:hover,
+.mask a:focus{
+background-position: 100px 0;
+/*change speed to see in slow motion*/
+transition: all 2s;
+cursor: cursor: url("CursorPointer.png"), pointer;
+}
+.mask a::after{
+content:'';
+position: absolute;
+pointer-events: none;
+top:0; left:0; right:0; bottom: 0;
+background: radial-gradient(0 0,circle farthest-side, rgba(255,255,0,0.3) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background-position: inherit;
+-webkit-mask: url('2.1Paglathala.png');
+cursor: url("CursorPointer.png"), pointer;
+
+}
+
+/*****************************************Shining Text1*****************************************/
+.style5 {
+				font-family: "Times New Roman", Times, serif;
+}
+.next {
+background-color: #fff;
+color: black;
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+		
+.next:hover {
+background-color: grey;
+transition: .5s;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+
+}
+
+a {
+text-decoration: none;
+cursor: url("CursorPointer.png"), pointer;
+
+
+}
+.style6 {
+				color: #FFFFFF;
+}
+.style7 {
+				font-size: x-large;
+				font-family: "Times New Roman", Times, serif;
+				color: #FFCC00;
+}
+
+.style9 {
+	color: white;
+}
+.style11 {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFFFFF;
+	font-size: large;
+}
+.style23 {
+				border-style: solid;
+				border-color: #832E2E;
+				text-align: center;
+				font-size: xx-large;
+				color: #CDAD2D;
+				background-color: #832E2E;
+}
+.style24 {
+				border-style: solid;
+				border-color: #832E2E;
+				text-align: center;
+				background-color: #832E2E;
+}
+.style26 {
+				font-size: larger;
+				color: #F7CA18;
+}
+.style27 {
+				border: 1px solid #8BA86B;
+				background-color: #8BA86B;
+}
+.style28 {
+				font-family: "Times New Roman", Times, serif;
+				color: #FFFFFF;
+				font-size: large;
+				background-color: #FFFFFF;
+}
+.style29 {
+				color: #000000;
+}
+.style30 {
+				background-color: #FFFFFF;
+}
+.style31 {
+				color: #000000;
+				font-family: "Times New Roman", Times, serif;
+}
+.style32 {
+				font-size: larger;
+}
+.style33 {
+				font-family: "Times New Roman", Times, serif;
+				color: #AE9633;
+}
+.style34 {
+				color: #F7CA18;
+				text-align: center;
+				font-size: 35pt;
+}
+.style35 {
+				color: #FFFFFF;
+				font-size: x-large;
+}
+.style36 {
+				font-family: "Times New Roman", Times, serif;
+				color: #FFCC00;
+}
+</style>
+</head>
+
+
+
+
+
+
+<!****Nav Bar****!>
+<p></p>
+<div id="hidenavbar" style="z-index: 8"> <Center>
+
+	
+<ul><font face="Times New Roman">
+
+<li><div class="dropdown"><a href="2 Paglathala.html">Paglathala</a>
+
+
+<li><div class="dropdown"><a href="3 Mga Aralin.html">Mga &nbsp;Aralin</a>
+
+<div class="dropdown-content"> 
+<a href="3.2 Kaligirang Pangkasaysayan.html">Aralin 1</a>
+<a href="3.3 Si Basilio.html">Aralin 2</a>
+<a href="3.4 Si Kabesang Tales.html">Aralin 3</a>
+<a href="3.5 Si Juli.html">Aralin 4</a>
+<a href="3.6 Si Isagani.html">Aralin 5</a>
+<a href="3.7 Si Padre Florentino.html">Aralin 6</a>
+<a href="3.8 Si Simoun.html">Aralin 7</a> 
+
+</div> 
+
+</li>
+<a href="../index.html">
+				<img alt=Icon src="NavIcon.png" width="200" height=60></a>
+<li><div class="dropdown"><a href="4 Mga Tauhan.html">Mga Tauhan</a>
+
+<div class="dropdown-content"> 
+
+<a href="4 Mga Tauhan.html#Simoun">Simoun</a>
+<a href="4 Mga Tauhan.html#Basilio">Basilio</a>
+<a href="4 Mga Tauhan.html#Isagani">Isagani</a>
+<a href="4 Mga Tauhan.html#Macaraig">Macaraig</a>
+<a href="4 Mga Tauhan.html#Kabesang Tales">Kabesang Tales</a>
+<a href="4 Mga Tauhan.html#Padre Florentino">Padre Florentino</a>
+<a href="4 Mga Tauhan.html#Don Custodio">Don Custodio</a> 
+<a href="4 Mga Tauhan.html#Jograt">Jograt</a>
+<a href="4 Mga Tauhan.html#Paulita Gomez">Paulita Gomez</a>
+<a href="4 Mga Tauhan.html#Juli">Juli</a>
+<a href="4 Mga Tauhan.html#Juanito Pelaez">Juanito Palaez</a>
+<a href="4 Mga Tauhan.html#Donya Victorina">Donya Victorina</a>
+<a href="4 Mga Tauhan.html#Padre Camorra">Padre Camorra</a>
+<a href="4 Mga Tauhan.html#Ben-Zayb">Ben-Zayb</a> 
+<a href="4 Mga Tauhan.html#Placido Penitente">Placido Penitente</a>
+<a href="4 Mga Tauhan.html#Tiburcio de Espadana">Tiburcio de Espadaña</a>
+<a href="4 Mga Tauhan.html#Hermana Penchang">Hermana Penchang</a>
+<a href="4 Mga Tauhan.html#Padre Irene">Padre Irene</a>
+<a href="4 Mga Tauhan.html#Quiroga">Quiroga</a>
+<a href="4 Mga Tauhan.html#Don Timoteo Palaez">Don Timoteo Palaez/a>
+<a href="4 Mga Tauhan.html#Tandang Selo">Tandang Selo</a> 
+<a href="4 Mga Tauhan.html#Padre Fernandez">Padre Fernandez</a>
+<a href="4 Mga Tauhan.html#Sandoval">Sandoval</a>
+<a href="4 Mga Tauhan.html#Hermana Bali">Hermana Bali</a>
+<a href="4 Mga Tauhan.html#Padre Millon">Padre Millon</a>
+<a href="4 Mga Tauhan.html#Tadeo">Tadeo</a>
+<a href="4 Mga Tauhan.html#Leeds">Leeds</a>
+<a href="4 Mga Tauhan.html#Tano">Tano</a> 
+<a href="4 Mga Tauhan.html#Pepay">Pepay</a>
+<a href="4 Mga Tauhan.html#Gobernador Heneral">Gobernador Heneral</a>
+<a href="4 Mga Tauhan.html#Padre Hernando De la Sibyla">Padre Hernando De la Sibyla</a>
+<a href="4 Mga Tauhan.html#Pecson">Pecson</a>
+<a href="4 Mga Tauhan.html#Padre Bernardo Salvi">Padre Bernardo Salvi</a>
+<a href="4 Mga Tauhan.html#Kapitan Tiyago">Kapitan Tiyago</a>
+
+
+</div> 
+
+</li><li><div class="dropdown"><a href="5 Mga Kabanata.html">Saliksikin</a>
+
+<div class="dropdown-content"> 
+<a href="5 Mga Kabanata.html#1">Kabanata 1</a>
+<a href="5 Mga Kabanata.html#2">Kabanata 2</a>
+<a href="5 Mga Kabanata.html#3">Kabanata 3</a>
+<a href="5 Mga Kabanata.html#4">Kabanata 4</a>
+<a href="5 Mga Kabanata.html#5">Kabanata 5</a>
+<a href="5 Mga Kabanata.html#6">Kabanata 6</a>
+<a href="5 Mga Kabanata.html#7">Kabanata 7</a>
+<a href="5 Mga Kabanata.html#8">Kabanata 8</a>
+<a href="5 Mga Kabanata.html#9">Kabanata 9</a>
+<a href="5 Mga Kabanata.html#10">Kabanata 10</a>
+<a href="5 Mga Kabanata.html#11">Kabanata 11</a>
+<a href="5 Mga Kabanata.html#12">Kabanata 12</a>
+<a href="5 Mga Kabanata.html#13">Kabanata 13</a>
+<a href="5 Mga Kabanata.html#14">Kabanata 14</a>
+<a href="5 Mga Kabanata.html#15">Kabanata 15</a>
+<a href="5 Mga Kabanata.html#16">Kabanata 16</a>
+<a href="5 Mga Kabanata.html#17">Kabanata 17</a>
+<a href="5 Mga Kabanata.html#18">Kabanata 18</a>
+<a href="5 Mga Kabanata.html#19">Kabanata 19</a>
+<a href="5 Mga Kabanata.html#20">Kabanata 20</a>
+<a href="5 Mga Kabanata.html#21">Kabanata 21</a>
+<a href="5 Mga Kabanata.html#22">Kabanata 22</a>
+<a href="5 Mga Kabanata.html#23">Kabanata 23</a>
+<a href="5 Mga Kabanata.html#24">Kabanata 24</a>
+<a href="5 Mga Kabanata.htmxl#25">Kabanata 25</a>
+<a href="5 Mga Kabanata.html#26">Kabanata 26</a>
+<a href="5 Mga Kabanata.html#27">Kabanata 27</a>
+<a href="5 Mga Kabanata.html#28">Kabanata 28</a>
+<a href="5 Mga Kabanata.html#29">Kabanata 29</a>
+<a href="5 Mga Kabanata.html#30">Kabanata 30</a>
+<a href="5 Mga Kabanata.html#31">Kabanata 31</a>
+<a href="5 Mga Kabanata.html#32">Kabanata 32</a>
+<a href="5 Mga Kabanata.html#33">Kabanata 33</a>
+<a href="5 Mga Kabanata.html#34">Kabanata 34</a>
+<a href="5 Mga Kabanata.html#35">Kabanata 35</a>
+<a href="5 Mga Kabanata.html#36">Kabanata 36</a>
+<a href="5 Mga Kabanata.html#37">Kabanata 37</a>
+<a href="5 Mga Kabanata.html#38">Kabanata 38</a>
+<a href="5 Mga Kabanata.html#39">Kabanata 39</a>
+
+
+
+</div> 
+
+
+</ul>
+</font>
+</div>
+
+
+</ul>
+</font>
+</div>
+
+
+<div class="stem-wrapper">
+<div class="stem" style="right: 1311px"></div>
+<div class="stem-background"></div>
+</div>
+<header class="section header">
+<div class="section-inner" style="border-top-style: solid; border-top-width: 1px; padding-top: 1px">
+
+<div class="master-head">
+<class="page-title"><div class="mask pseudo">
+<a href="#" class="style2" style="left: -5px; top: 100px">
+<img src="2.1Paglathala.png" alt="El Fili" width="780" height="150" />
+</a>
+</div>
+
+<p class="page-description" style="font-family: Arial, Helvetica, sans-serif"></a>
+<span class="style36">Ang Pamagat </span> 	<p class="style3">
+Noong 1887, nailathala ni Dr. Jose Rizal ang una niyang nobela, Noli me Tangere, <br>
+na nakasulat sa wikang Kastila, na kung saan ay ipinapakita ang mga pang-aabuso 
+ng mga <br>prayle. Nang taong din iyon ay bumalik siya sa Maynila na kung <br>
+saan ay ipinagbawal na ang Noli at si Rizal ay labis na kinamumuhian ng mga 
+prayle. <br>Noong 1888, bumalik si Rizal sa Europa, kung saan ay <br>isinulat 
+niya ang karugtong ng Noli me Tangere na may pamagat na El Filibusterismo.  <br>
+Ito ay nailathala noong 1991. Ngayon ay ating tuklasin <br>ang kasaysayan ng 
+pagkakasulat ng <br>El Filibusterismo.</p>
+<a href="#two"> <class onclick="topFunction()" class="scroll-button"> <font color="black" size="4" face="century gothic"> 
+			<span class="style5">Magpatuloy</span></button>
+ 
+</div> <!-- section-inner -->
+</header> <!-- header -->
+<header class="section header" id="two">
+<div class="section-inner">
+
+<div class="master-head">
+<h1 class="page-title" style="font-family: 'Old English Text MT'">&nbsp;</h1>
+</div>
+
+</div> <!-- section-inner -->
+</header>
+<!-- header -->
+
+<div class="section main-content" style="left: 0px; top: -19px">
+<div class="section-inner">
+
+<div class="stem-padding"></div>
+
+<div class="post-wrapper">
+
+<article class="post Calendar-scroll">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div id="page-wrap">
+</div>
+
+<div class="post-content" style="color: #112C30">
+<p class="meta" style="color: #cdad2d; font-size: large; margin-top: 10px;"><br>1887 Oktubre
+</p>
+<span class="style7">Ang Pagsisimula ng El Filibusterismo</span></h2>
+<div class="entry-content">
+<span class="style6"><br>Sinimulan ni Rizal ang akdang El Filibusterismo sa 
+Calamba.</span></p>
+</font> <font color="black" size="4" face="century gothic"> 
+
+
+
+</font> 
+
+
+
+<font color="black" size="4" face="century gothic"> 
+<a href="#three" class="next"> »</a> 
+
+</div>
+
+</div>
+</article>
+
+
+<article class="post Quill-scroll" data-stem-color="green" id="three">
+
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<p>
+<p>
+<p>
+<p>
+<p><br><br><br><p></p>
+<p>
+<p>
+<p>
+<p>
+
+<p>
+<p>
+<p>
+
+<div class="post-content">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p></p>
+
+<p class="meta" style="color: #cdad2d; font-size: large; margin-top: 10px;">1888 
+</p>
+<span class="style7">Mga Pagbabago</span></h2>
+<div class="entry-content">
+<span class="style6"><br>Gumawa ng mga pagbabago si Rizal sa nobela habang siya 
+ay nasa London. Itinuloy niya sa Paris ang pagsusulat nito. Hindi nagtagal ay 
+lumipat siya sa Brussels, Belgica kung saan ay mura ang mga gastusin at dito 
+niya naisulat ang malaking bahagi ng El Filibusterismo.
+</span></p>
+<a href="#four" class="next"> »</a> 
+
+</div>
+</div>
+</article>
+
+<article class="post Quillink-scroll" data-stem-color="yellow" id="four">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div class="post-content">
+<p>
+<p>
+<p><br><br><br><p></p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+
+<p>
+<p>
+
+<p class="meta" style="color: #cdad2d; font-size: large; margin-top: 10px;">Setyembre 22, 1891
+
+</p>
+<span class="style7">Unang Paglimbag</span></h2>
+<div class="entry-content">
+<span class="style6"><br>Nagpahiram si Valentin Ventura kay Jose Rizal ng pera 
+upang mailimbag at mailathala ng maayos ang nobela sa Ghent, Belgium. 
+</span></p>
+<a href="#five" class="next"> »</a> 
+</div>
+</div>
+</article>
+
+<article class="post Calendar-scroll" data-stem-color="white" id="five">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div class="post-content">
+
+<p class="meta" style="color: #cdad2d; font-size: large; margin-top: 10px;">Marso 29, 1891 </p>
+<span class="style7">Pagtatapos</span></h2>
+<div class="entry-content">
+<span class="style6"><br>Natapos ni Rizal ang nobela sa Biarritz
+</span></p>
+
+</div>
+</div>
+</article>
+
+</div> <!-- section-inner -->
+</div>
+<span class="style9"> 
+
+
+<br>
+	<table style="width: 149%; position: absolute; left: -345px; top: 1290px; bottom: 938px;" class="style11">
+		<tr>
+			<td class="style23" style="width: 1387px">Ang Pamagat</td>
+		</tr>
+		<tr>
+			<td class="style24" style="width: 1387px">
+			<br>
+			 
+<p>Ang salitang Filibustero ay kailangan pang ipaliwanag ni Rizal sa kanyang 
+kaibigang Aleman na si Ferdinand Blumentritt </p> 
+<p>dahil hindi niya nauunawaan ang paggamit ng salitang ito sa Noli Me Tangere. 
+Ipinaliwanag sa liham ni Rizal na ang salitang filibustero ay </p> 
+<p>hindi ganoong kakilala sa Pilipinas dahil hindi pa ito kilala ng masa. Unang 
+narinig ito ni Rizal noong 1872 sa pagbibigtay sa Gomburza. </p>
+<p>Matinding gulo ang idinulot ng salitang ito. Pinagbawalan si Rizal at ang ama 
+nito na banggitin ang salitang ito pati na rin ang Cavite at Burgos</p> 
+<p>isa sa mga binitay). Ginamit ang salitang ito ng Pahayagang Maynila at mga 
+Espanyol na pantawag sa mga taong pinagsususpetsahan na rebolusyonaryo. </P>
+<p>Kinatakutan itong banggitin ng mga edukado dahil nangangahulugan ito ng 
+mapanganib na makabayan na kalaunan ay bibitayin.</p>
+<p>Sa pagtapos ng ika-19 na siglo ay naging kilala ang filibustero na 
+nangangahulugang supersibo. </P> </td>
+
+
+
+		</table>
+
+	
+	<button onclick="topFunction()" id="scrollup" title="Bumalik sa itaas">&#x25B4;</button>
+<script>
+/*Scroll down hide*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+document.getElementById("hidenavbar").style.top = "0";
+} else {
+document.getElementById("hidenavbar").style.top = "-100px";
+}
+}
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollup").style.display = "block";
+    } else {
+        document.getElementById("scrollup").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</div>
+<table style="width: 101%; position: absolute; left: -3px; top: 2988px;" align="left" class="style27" cellpadding="25">
+				<tr>
+								<td class="style28" style="width: 631px; height: 599px">
+								<font color="black" size="4" face="century gothic"> 
+<span class="style9"> 
+
+
+								<span class="style32"><span class="style33">
+								<strong><br>
+								<br>
+								ANG PAGHAHANDOG<br>
+								..........................................<br>
+								</strong></span></span></span></font><br>
+								<span class="style29">Inalay ni Rizal ang nobela sa alaala ng mga paring sina Mariano Gomez, Jose Burgos at Jacinto Zamora na maskilala bilang Gomburza. Sila ang mga pare na napagbintangan ng  pag-aaklas laban sa Kastilang Pamahalaan na naging dahilan ng kanilang pagkamatay sa pamamagitan ng Garrote. Tumatak sa isipan ni Rizal  ang pangyayari na ito na ayon sa kanyaý hindi makatarungan.<br>
+								<br>
+								<font color="black" size="4"> 
+								<span style="font-size: 12.0pt; line-height: 115%;">
+								<em>Mula Kaliwa hanggang Kanan; Jacinto Zamora, 
+								Mariano Gomez, at Jose Burgos</em><o:p></o:p></span></span></td>
+								<td style="height: 597px">
+								<div class="zoomwrapper" style="width: 487px; position: absolute; left: 684px; top: 1px;">
+<div class="zoom-effect-container" style="left: 0px; top: 0px; width: 750px; height: 600px">
+<div class="zoomimage-card" style="left: 0px; top: 0px; width: 750px; height: 600px;">
+<img src="3.2.6 GOMBURZA.jpg" width="750" height="600" style="position: absolute; left: -1px; top: 0px;"/>
+</div>
+</div>
+</td>
+				</tr>
+				<tr>
+								<td style="width: 631px; height: 651px;">
+																<font color="black" size="4" face="century gothic"> 
+<span class="style9"> 
+
+
+																<div class="zoomwrapper" style="width: 681px; position: absolute; left: 684px; top: 1280px;">
+<div class="zoom-effect-container" style="left: 0px; top: 0px; width: 681px; height: 697px">
+<div class="zoomimage-card" style="left: 0px; top: 0px; width: 681px; height: 697px;">
+<img src="3.2.6 Katipunan.jpg" width="681" height="697" style="position: absolute; left: 0px; top: 0px;"/>
+</div>
+</div>
+																</div>
+																</span></font>
+																<div class="zoomwrapper" style="width: 681px; position: absolute; left: 1px; top: 603px;">
+<div class="zoom-effect-container" style="left: 0px; top: 0px; width: 681px; height: 675px">
+<div class="zoomimage-card" style="left: 0px; top: 0px; width: 681px; height: 675px;">
+<img src="3.2.6 Jose Rizal.jpg" width="681" height="675" style="position: absolute; left: 0px; top: 0px;"/>
+</div>
+</div>
+</td>
+								<td class="style30" style="height: 651px; width: 631px;"> 
+								<font color="black" size="4" class="style5"> 
+								<span class="style9"> 
+
+
+								<font color="black" size="4" face="century gothic"> 
+
+
+								<span class="style32"><span class="style33">
+								<strong><br>
+								<br>
+								ANG TEMA<br>
+								.....................<br>
+								</strong></span>
+								</span></font><br>
+								<span class="style29">&nbsp;&nbsp;&nbsp; Ang akda ni Rizal na El Filibusterismo ay tulad ng una niyang akda na Noli Me Tangere sa hangarin nitong isiwalat ang kasalukuyang sitwasyon ng Pilipinas noong kanyang panahon. Ito ay dahil sa kagustuhan niyang magkaroon ng reporma sa edukasyon, itigil ang pang-aabuso ng mga paring Espanyol, itigil ang katiwalian sa pamamahala ng gobyerno, reporma sa mga pamahiin at paniniwala na nagkukubli sa likod ng relihiyon at pagpupumilit ng mga Pilipino at Espanyol na makatuntong sa altasosyalidad ng lipunan. Sa mga akdang ito ni Rizal, siya ay gumamit ng nga satirikong pahayag ngunit siya pa rin ay nag-iingat dahil ang mga pangyayari at sitwasyon na kanyang kinakaharap ay hindi maganda at may panganib.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Ang El Filibusterismo ay may layunin na matamasa ang pagbabago sa lipunan. Ang mga kabanata nito ay naglalaman ng mga pagtatalo na unti unting nagpapalaho ng pag-asa ni Rizal sa kanyang nga mabubuting hangarin para sa bayan. Ito ang naging dahilan kaya't ang nobela ay nagtapos sa kabiguan ni Simoun.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Ngunit marami ang mga iskolar ang nagtatalo sa totoong dahilan ng pagtutol ni Rizal sa rebolusyon, isa na dito ang dahilang hindi ito natuloy dahil sa hindi organisadong rebolusyon ng mga taong kapos sa edukasyon kaya mababa ang katiyakan an tagumpay at mauuwi lamang sa pagkamatay ng maraming tao. Sa pahayag ni Rizal, ang pagsasakripisyo ng isang tao ay mas makatwiran dahilan upang suportahan ni Rizal ang pakikibaka sa kabila ng hinahangad na reporma upang walang masawi. Ito pa rin ay nagpapatunay na ang ating pambansang bayani ay maraming inisip na konsiderasyon sa kanyang mga paraan upang ipaglaban ang repormang inaasam.
+</span></td>
+				</tr>
+				<tr>
+								<td style="width: 631px" class="style30"> <font color="black" size="4" face="century gothic"> 
+
+
+								<strong> 
+
+
+								<span class="style32"><span class="style33">
+								<br>
+								<br>
+								ANG KASAYSAYANG PANGKONTEKSTO<br>
+								.............................................................................</span></span><span class="style9"><span class="style26"><br>
+								</span><br>
+								</span></strong><span class="style9">
+								<span class="style31">&nbsp;&nbsp;&nbsp; Matapos ang apat na taon ng isulat ang Noli me Tangere, isinulat ni Rizal ang isa pa niyang nobela na El Filibusterismo. Masasalamin sa nobela ang sistema ng politika at kalagayang panlipunan ng Pilipinas noong panahon na ito’y sinusulat. Ang mga kabiguan ni Rizal na piliting magkaroon ng pagbabago sa lipunan ang dumagdag sa mapagbantang tono ng akda.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Si Rizal mismo ang nagsabi na mas maganda at may lalim ang El Fili kaysa Noli.<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Sinulatan ni Rizal si Blumentritt ng matapos niya ang akda. Ang nakasuklat sa liham ay “Hindi ko isinulat ang El Fili nang may paghihiganti laban sa aking mga kalaban, kundi para sa kabutihan ng mga nagdusa, at sa karapatan ng mga Tagalog…”
+Nang magbigay reaksyon ang mga Espanyol sa una niyang akda, pinilit ni Rizal na hindi mapasakamay ng mga Espanyol ang El Fili. Kung sa bagay, ang nobelang ito ay isinulat niya para sa mga Pilipino, hindi sa mga Espanyol.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Matapos na mabigyan ni Rizal ang mga kaibigan niya sa Europa, ang mga natirang kopya ng nobela ay inilaan niya para maipadala sa Pilipinas. Unang naipadala sa Hong Kong ang kanyang mga nobela upang ipuslit ng kanyang mga kaibigan sa Pilipinas. Nang makarating sa Pilipinas ang mga natirang kopya, agad itong kinumpiska ng mga awtoridad. Ang mga naitagong palihim ay naging mabenta sa mga Pilipino.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp; Ang nilalaman ng aklat at ang pag-alay ng nobela para sa tatlong paring martyr ay ginamit laban kay Rizal bilang katibayan ng kaniyang pagiging subersido. Salungat sa nais ni Rizal, naging inspirasyon nina Andres Bonifacio at iba pang rebolusyonaryo sa kanilang ipinaglalaban ang dalawang nobela.
+
+
+</span></td>
+		</table>
+
+
+
+</font> 
+
+
+
+</div>
+<span class="style9"> 
+
+
+<table style="width: 100%; position: absolute; left: 10px; top: 4983px;" align="left">
+				<tr>
+								<td class="style34">
+								<hr style="width: 1273px">
+								ARALIN 1<br>
+								<span class="style35">Subukin ang iyong pang-unawa 
+								sa mga binasa sa pamamagitan ng pagsagot sa mga 
+								gawain.<br>
+								...
+								</span></td>
+				</tr>
+				<tr>
+								<td>			<div class="col-md-3 col-sm-3 col-xs-6">
+<font face='Times New Roman'>
+<a href="3.2 Kaligirang Pangkasaysayan.html#Gawain" class="btn btn-sm animated-button thar-three" style="left: -3px; top: -29px; width: 120px; height: 20px; z-index: 7">
+Aralin 1</a> </div>
+</div>
+<hr></td>
+				</tr>
+</table>
+ 
+
+
+
+</html>
+
+

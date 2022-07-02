@@ -1,0 +1,1113 @@
+﻿<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="3.6 Si Isagani .css">
+<title>El Filibusterismo | Si Isagani</title>
+<link rel="icon" href="Quill Pen Icon.png">
+
+<style>
+
+ /*==========Global==========*/
+/*==========Basics==========*/
+html {
+scroll-behavior: smooth;
+}
+body {
+background-color: #832e2e;
+}
+
+
+/*==========Sections==========*/
+
+.header {
+text-align: center;
+position: relative;
+z-index: 1;
+				background-image: linear-gradient(to bottom, lighten(@header-background, 15%) 0%, @header-background 100%);
+}
+.header .master-head {
+padding: 7% 30px;
+background-color: #832e2e;
+}
+.header .page-title {
+padding: 0 30px 0 30px;
+font-size: 22px;
+color: #FFF;
+
+}
+.header .page-description {
+margin-top: 400px;
+max-width: 1000px;
+font-size: 28px;
+color: #FFF;
+}
+.header .scroll-button {
+color: #FFF;
+font-size: 20px;
+padding: 15px 20px 15px 20px;
+display: inline-block;
+background: #cdad2d;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.header .scroll-button:hover {
+background: #F7CA18;}
+.header .scroll-button:active {
+background: #194c53;
+}
+.main-content {
+margin: 0px auto;
+position: relative;
+}
+.main-content .section-inner,
+.main-content .post-wrapper {
+*zoom: 1;
+}
+.main-content .section-inner:before,
+.main-content .post-wrapper:before,
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+content: "";
+display: table;
+}
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+clear: both;
+}
+.section .section-inner {
+margin: 0px auto;
+width: 1024px;
+}
+@media only screen {
+.section .section-inner {
+width: auto;
+max-width: 1024px;
+}
+}
+/*==========Stem==========*/
+.stem-wrapper {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 50%;
+}
+.stem-wrapper.color-yellow .stem-background {
+background: #cdad2d;
+}
+.stem-wrapper.color-green .stem-background {
+background: #35C189;
+}
+.stem-wrapper.color-white .stem-background {
+background: #FFF;
+}
+.stem-wrapper .stem,
+.stem-wrapper .stem-background {
+position: absolute;
+top: 0px;
+left: -30px;
+width: 60px;
+}
+.stem-wrapper .stem {
+background: none;
+height: 100%;
+}
+.stem-wrapper .stem-background {
+background: #cdad2d;
+height: 50%;
+transition-duration: 5s;
+}
+.stem-padding,
+.single-stem-icon {
+width: 60px;
+height: 0px;
+margin: 0px auto;
+background: none;
+}
+.single-stem-icon.scroll-to-top {
+cursor: pointer;
+background-image: url('file:///E:/ICT%20x%20Fil/Transferrrrrrrrr/2%20Paglalathala/2%20Paglathala/Scrolltop.png');
+}
+/*==========Post wrapper ==========*/
+.post-wrapper {
+*zoom: 1;
+}
+.post-wrapper:before,
+.post-wrapper:after {
+content: "";
+display: table;
+}
+.post-wrapper:after {
+clear: both;
+}
+.post-wrapper .post {
+position: relative;
+width: 432px;
+padding: 0px 0px 60px 0px;
+clear: both;
+opacity: 1;
+-webkit-perspective: 1000px;
+perspective: 1000px;
+}
+.post-wrapper .post.hidden .post-content {
+-webkit-transform: translateY(100px) rotateX(30deg);
+transform: translateY(100px) rotateX(30deg);
+opacity: 0;
+}
+.post-wrapper .post:hover .post-content,
+.post-wrapper .post.active .post-content {
+opacity: 1;
+}
+.post-wrapper .post:hover .post-content .meta,
+.post-wrapper .post.active .post-content .meta {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post:nth-child(even) {
+float: right;
+}
+.post-wrapper .post:nth-child(odd) {
+float: left;
+}
+.post-wrapper .post:nth-child(even) .stem-overlay {
+left: -110px;
+}
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+right: -110px;
+}
+.post-wrapper .post.Quilllink-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quillink.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Calendar-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Calendar.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Quill-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quill.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post .stem-overlay {
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 60px;
+}
+.post-wrapper .post .stem-overlay .icon {
+background: transparent no-repeat center center;
+height: 60px;
+width: 60px;
+cursor: pointer;
+}
+.post-wrapper .post .stem-overlay .stem-mask {
+position: absolute;
+top: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: url('stem-mask.png') repeat-y center top;
+}
+.post-wrapper .post .post-content {
+opacity: 0.3;
+transition-duration: 0.4s;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post .post-content .meta {
+color: rgba(255, 255, 255, 0.3);
+margin: 0px 0px 15px 0px;
+letter-spacing: 0px;
+opacity: 0;
+transition-duration: 1s;
+transition-delay: 0.2s;
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+}
+.post-wrapper .post .post-content .post-title {
+font-size: 32px;
+line-height: 60px;
+margin: 0px 0px 15px 0px;
+}
+/*==========Media queries==========*/
+@media only screen and (max-width: 1080px) {
+.main-content,
+.main-content .section-inner {
+max-width: none;
+}
+.stem-wrapper {
+left: 80px;
+}
+.stem-padding,
+.single-stem-icon {
+margin: 0px;
+float: left;
+margin-left: 50px;
+}
+.post-wrapper .post,
+.post-wrapper .post:nth-child(even),
+.post-wrapper .post:nth-child(odd) {
+width: auto;
+margin-left: 110px;
+float: none;
+}
+.post-wrapper .post .stem-overlay,
+.post-wrapper .post:nth-child(even) .stem-overlay,
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+left: -60px;
+right: auto;
+}
+.post-wrapper .post .post-content {
+padding: 0px 50px;
+}
+}
+@media only screen and (max-width: 700px) {
+.header .page-title {
+font-size: 40px;
+}
+.post-wrapper .post {
+margin-left: 90px !important;
+}
+.post-wrapper .post .post-content {
+padding: 0 25px;
+}
+.stem-wrapper {
+left: 60px;
+}
+.stem-padding,
+.single-stem-icon {
+margin-left: 30px;
+}
+}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+VIEW LESS CODE VIEW RESOURCES 1×
+0.5×
+0.25×
+ RERUN
+.style1 {
+				color: #fff;
+}
+.style2 {
+				font-size: large;
+				color: #fff;
+}
+
+
+
+
+.style5 {
+				font-family: "Times New Roman", Times, serif;
+}
+.next {
+background-color: #fff;
+color: black;
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+		
+.next:hover {
+background-color: grey;
+transition: .5s;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+
+}
+
+a {
+text-decoration: none;
+}
+.style13 {
+				margin-left: 40px;
+}
+.style14 {
+				margin-left: 80px;
+				margin-top: 0px;
+}
+.style15 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFFFFF;
+}
+.style16 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+.style17 {
+				margin-top: 1px;
+}
+.style19 {
+				margin-left: 40px;
+				text-align: left;
+				font-size: xx-large;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.zoomimage-card {
+position: relative;
+top: 0;
+left: 0;
+
+
+}
+
+.style21 {
+				font-size: large;
+}
+
+.style22 {
+				margin-left: 40px;
+				text-align: left;
+				font-size: xx-large;
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.style23 {
+				font-size: x-large;
+}
+
+.style25 {
+				margin-left: 160px;
+				text-align: left;
+				font-size: xx-large;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+.style26 {
+				color: #F7CA18;
+}
+.style27 {
+				font-size: x-large;
+				color: #F7CA18;
+}
+
+.style28 {
+				margin-left: 160px;
+				font-size: xx-large;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.style29 {
+				font-size: x-large;
+				color: #FFCC00;
+}
+
+.style30 {
+				color: #832E2E;
+}
+
+.style31 {
+				text-align: center;
+}
+.style33 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: large;
+				color: #FFFFFF;
+}
+
+.style34 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: x-large;
+				color: #FFCC00;
+}
+.style35 {
+				text-align: center;
+				font-size: x-large;
+				font-family: "Times New Roman", Times, serif;
+				color: #FFCC00;
+}
+
+.style37 {
+				color: #FFCC00;
+}
+
+.style39 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: x-large;
+				color: #FFFFFF;
+				text-align: center;
+}
+
+.style40 {
+				margin-left: 80px;
+				text-align: left;
+				font-size: xx-large;
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 5px;
+}
+
+.style41 {
+				margin-left: 160px;
+				font-size: small;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.style42 {
+				font-weight: normal;
+}
+.style43 {
+				font-size: small;
+}
+
+</style>
+</head>
+
+
+
+<!****Nav Bar****!>
+<p></p>
+<div id="hidenavbar" style="z-index: 8"> <Center>
+
+	
+<ul><font face="Times New Roman">
+
+<li><div class="dropdown"><a href="2 Paglathala.html">Paglathala</a>
+
+
+<li><div class="dropdown"><a href="3 Mga Aralin.html">Mga &nbsp;Aralin</a>
+
+<div class="dropdown-content"> 
+<a href="3.2 Kaligirang Pangkasaysayan.html">Aralin 1</a>
+<a href="3.3 Si Basilio.html">Aralin 2</a>
+<a href="3.4 Si Kabesang Tales.html">Aralin 3</a>
+<a href="3.5 Si Juli.html">Aralin 4</a>
+<a href="3.6 Si Isagani.html">Aralin 5</a>
+<a href="3.7 Si Padre Florentino.html">Aralin 6</a>
+<a href="3.8 Si Simoun.html">Aralin 7</a>
+</div> 
+
+</li>
+<a href="../index.html">
+				<img alt=Icon src="NavIcon.png" width="200" height=60></a>
+<li><div class="dropdown"><a href="4 Mga Tauhan.html">Mga Tauhan</a>
+
+<div class="dropdown-content"> 
+
+<a href="4 Mga Tauhan.html#Simoun">Simoun</a>
+<a href="4 Mga Tauhan.html#Basilio">Basilio</a>
+<a href="4 Mga Tauhan.html#Isagani">Isagani</a>
+<a href="4 Mga Tauhan.html#Macaraig">Macaraig</a>
+<a href="4 Mga Tauhan.html#Kabesang Tales">Kabesang Tales</a>
+<a href="4 Mga Tauhan.html#Padre Florentino">Padre Florentino</a>
+<a href="4 Mga Tauhan.html#Don Custodio">Don Custodio</a> 
+<a href="4 Mga Tauhan.html#Jograt">Jograt</a>
+<a href="4 Mga Tauhan.html#Paulita Gomez">Paulita Gomez</a>
+<a href="4 Mga Tauhan.html#Juli">Juli</a>
+<a href="4 Mga Tauhan.html#Juanito Pelaez">Juanito Palaez</a>
+<a href="4 Mga Tauhan.html#Donya Victorina">Donya Victorina</a>
+<a href="4 Mga Tauhan.html#Padre Camorra">Padre Camorra</a>
+<a href="4 Mga Tauhan.html#Ben-Zayb">Ben-Zayb</a> 
+<a href="4 Mga Tauhan.html#Placido Penitente">Placido Penitente</a>
+<a href="4 Mga Tauhan.html#Tiburcio de Espadana">Tiburcio de Espadaña</a>
+<a href="4 Mga Tauhan.html#Hermana Penchang">Hermana Penchang</a>
+<a href="4 Mga Tauhan.html#Padre Irene">Padre Irene</a>
+<a href="4 Mga Tauhan.html#Quiroga">Quiroga</a>
+<a href="4 Mga Tauhan.html#Don Timoteo Palaez">Don Timoteo Palaez/a>
+<a href="4 Mga Tauhan.html#Tandang Selo">Tandang Selo</a> 
+<a href="4 Mga Tauhan.html#Padre Fernandez">Padre Fernandez</a>
+<a href="4 Mga Tauhan.html#Sandoval">Sandoval</a>
+<a href="4 Mga Tauhan.html#Hermana Bali">Hermana Bali</a>
+<a href="4 Mga Tauhan.html#Padre Millon">Padre Millon</a>
+<a href="4 Mga Tauhan.html#Tadeo">Tadeo</a>
+<a href="4 Mga Tauhan.html#Leeds">Leeds</a>
+<a href="4 Mga Tauhan.html#Tano">Tano</a> 
+<a href="4 Mga Tauhan.html#Pepay">Pepay</a>
+<a href="4 Mga Tauhan.html#Gobernador Heneral">Gobernador Heneral</a>
+<a href="4 Mga Tauhan.html#Padre Hernando De la Sibyla">Padre Hernando De la Sibyla</a>
+<a href="4 Mga Tauhan.html#Pecson">Pecson</a>
+<a href="4 Mga Tauhan.html#Padre Bernardo Salvi">Padre Bernardo Salvi</a>
+<a href="4 Mga Tauhan.html#Kapitan Tiyago">Kapitan Tiyago</a>
+
+
+</div> 
+
+</li><li><div class="dropdown"><a href="5 Mga Kabanata.html">Saliksikin</a>
+
+<div class="dropdown-content"> 
+<a href="5 Mga Kabanata.html#1">Kabanata 1</a>
+<a href="5 Mga Kabanata.html#2">Kabanata 2</a>
+<a href="5 Mga Kabanata.html#3">Kabanata 3</a>
+<a href="5 Mga Kabanata.html#4">Kabanata 4</a>
+<a href="5 Mga Kabanata.html#5">Kabanata 5</a>
+<a href="5 Mga Kabanata.html#6">Kabanata 6</a>
+<a href="5 Mga Kabanata.html#7">Kabanata 7</a>
+<a href="5 Mga Kabanata.html#8">Kabanata 8</a>
+<a href="5 Mga Kabanata.html#9">Kabanata 9</a>
+<a href="5 Mga Kabanata.html#10">Kabanata 10</a>
+<a href="5 Mga Kabanata.html#11">Kabanata 11</a>
+<a href="5 Mga Kabanata.html#12">Kabanata 12</a>
+<a href="5 Mga Kabanata.html#13">Kabanata 13</a>
+<a href="5 Mga Kabanata.html#14">Kabanata 14</a>
+<a href="5 Mga Kabanata.html#15">Kabanata 15</a>
+<a href="5 Mga Kabanata.html#16">Kabanata 16</a>
+<a href="5 Mga Kabanata.html#17">Kabanata 17</a>
+<a href="5 Mga Kabanata.html#18">Kabanata 18</a>
+<a href="5 Mga Kabanata.html#19">Kabanata 19</a>
+<a href="5 Mga Kabanata.html#20">Kabanata 20</a>
+<a href="5 Mga Kabanata.html#21">Kabanata 21</a>
+<a href="5 Mga Kabanata.html#22">Kabanata 22</a>
+<a href="5 Mga Kabanata.html#23">Kabanata 23</a>
+<a href="5 Mga Kabanata.html#24">Kabanata 24</a>
+<a href="5 Mga Kabanata.htmxl#25">Kabanata 25</a>
+<a href="5 Mga Kabanata.html#26">Kabanata 26</a>
+<a href="5 Mga Kabanata.html#27">Kabanata 27</a>
+<a href="5 Mga Kabanata.html#28">Kabanata 28</a>
+<a href="5 Mga Kabanata.html#29">Kabanata 29</a>
+<a href="5 Mga Kabanata.html#30">Kabanata 30</a>
+<a href="5 Mga Kabanata.html#31">Kabanata 31</a>
+<a href="5 Mga Kabanata.html#32">Kabanata 32</a>
+<a href="5 Mga Kabanata.html#33">Kabanata 33</a>
+<a href="5 Mga Kabanata.html#34">Kabanata 34</a>
+<a href="5 Mga Kabanata.html#35">Kabanata 35</a>
+<a href="5 Mga Kabanata.html#36">Kabanata 36</a>
+<a href="5 Mga Kabanata.html#37">Kabanata 37</a>
+<a href="5 Mga Kabanata.html#38">Kabanata 38</a>
+<a href="5 Mga Kabanata.html#39">Kabanata 39</a>
+
+
+
+</div> 
+
+
+</ul>
+</font>
+</div>
+
+
+</ul>
+</font>
+</div>
+
+
+<div class="stem-wrapper">
+<div class="stem" style="right: 1311px"></div>
+</div>
+<header class="section header">
+<div class="section-inner">
+
+<div class="master-head" style="height: 1307px">
+<class="page-title"><div class="mask pseudo">
+<a href="#" class="style2" style="left: -51px; top: 114px">
+<img src="3.6.1 Title.png" alt="El Fili" width="780" height="150" />
+</a>
+</div>
+<p class="style13">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<img alt="" id="one" src="3.6.2 White.png"734" height="654" style="position: absolute; left: 669px; top: 646px" class="style17" width="718"><br><br><br><br>
+</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">
+<img alt="" src="3.6.3 Layunin.jpg" width="624" height="510" style="position: absolute; left: 717px; top: 710px"></p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style16" style="position: relative; left: -18px; top: -14px">
+<strong>PANIMULA PARA KAY ISAGANI</strong></p>
+
+<p class="style19" style="position: relative; left: -15px; top: -36px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style21">&nbsp;Siya ay pamangkin ni Padre Florentino at katipan ni Paulita Gomez; sinasabing anak daw ni Padre Florentino sa dating katipan; prominente, isang makata at manunugma, malungkutin at tahimik; isa sa mga estudyanteng sumuporta sa hangaring magkaroon ng sariling akademya para sa wikang Kastila ang Pilipinas. Nagtapos sa Ateneo 
+Municipal.</span></p>
+
+<img alt="" src="3.6.4 Si Isagani.png" width="676" height="655" style="position: absolute; left: -3px; top: 647px; z-index: 9;"><p class="style14" style="position: absolute; left: 1097px; top: 1168px">
+&nbsp;<a href="#one"><class onclick="topFunction()" class="scroll-button"><font color="black" size="4" face="century gothic"><span class="style5">Magpatuloy</span></button>
+ 
+
+</font></a>
+</p>
+ 
+</div>
+</header>
+</div>
+
+<div id="Banner1" style="width: 856px; height: 413px; position: absolute; left: 239px; top: 1547px;" class="style17">
+&nbsp;<img src="3.6.5 Banner ni Isagani.jpg"1000" height="417"></div>
+ <p class="style16" style="position: relative; left: -2px; top: 489px; width: 1331px; height: 2046px;">
+<strong><br>
+<br>
+<img alt="" src="3.6.6 Paunang Pagtataya.png" width="1000" height="2000"></strong></p>
+
+<table style="width: 75%; left: 196px; position: absolute; top: 4015px; z-index: 4;">
+			<tr>
+		<td class="style31"><br>
+		<span class="style29">
+		<strong>Kabanata 2 : Sa Ilalim ng Kubyerta</strong></span></td>
+	</tr>
+				<tr>
+								<td>
+								<p class="MsoNormal"><span class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								</span><span class="style2">At nagtungo si Simoun sa ilalim ng kubyerta kung saan ang lahat ng gamit ng mga pasahero’y naroroon kung kaya’t medyo masikip. Sa ilalim ng kubyerta’y naroroon sa ang dalawang estudyante na si Basilio at Isagani. Nakipag usap si Simoun at binanggit na kaya’t hindi nakadadalaw ito sa lalawigan nila Basilio dahil sa ang mga mamamayan dito’y hindi kayang makabili ng alahas. Ngunit winika ni Isagani na hindi naman nila kailangan ng alahas kung kaya’t hindi sila bibili. Sa pag alok ni Simoun sa dalawa ng serbesa na tinanggihan naman ay sinabi nito na ayon kay Padre Camorra na kaya tamad ang mga Pilipino ay dahil sa puro tubig ang iniinom sa halip na serbesa.  Mabilis na tumugon si Basilio; Sabihin ninyo kay Padre Camorra na kung siya ay iinom ng tubig sa halip ng serbesa, marahil ay mawawala ang sanhi ng mga usap-usapan.  At dagdag ni Isagani:  lumuluhod sa alak at sa serbesa na pumapatay ng apoy; na kapag pinainit ay sumusulak; nagiging malawak na dagatan at gumugunaw ng santinakpan. Pagkaalis ni Simoun ay lubusang nakilala niya ito bilang isang mag aalahas o si Kardinal Moreno. May dumating na utusan.  Ipinatawag ni Padre Florentino ang pamangkin.  Nguni’t nakita ng Kapitan si Padre Florentino at ito’y inanyayahang pumanhik sa ibabaw ng kubyerta</span><o:p></o:p></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style31"><span class="style34">
+								<strong><br>
+								Kabanata 14 : Sa Bahay ng Mag-aaral</strong></span></td>
+				</tr>
+				<tr>
+								<td>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Si Makaraig ay nakatira sa isang malaking bahay. 
+								Dahil ito&#39;y maluwag, may mga binata 
+								nanangungupahan dito. Siya ay mayaman at kumuha 
+								siya ng kursong abogasya. Siya&#39;y pinuno ng 
+								kilusan ng Akademika ng wikang Kastila. Kung 
+								kaya&#39;t inimbitahan niya sina Isagani, Sandoval, 
+								Pecson at Pelaez upang pag-usapan ang kanilang 
+								layunin. <o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Naniniwala sina Isagani at Sandoval na papayagan 
+								ang pagbubukas ng paaralan subalit si Pecson ay 
+								nagdududa. Kaya sila&#39;y nagkaroon ng debate kung 
+								ano ang kanilang gagawin sa kanilang paaralan. 
+								Si Sandoval ay simbolo ng mga Kastila na 
+								pinahahalagahan ang mga Pilipino. Iniulat naman 
+								ni Makaraig na ipinagtatanggol sila ni Padre 
+								Irene sa mga sumasalungat sa kanilang adhikain. 
+								Kailangan din daw nila na pumanig sa kanila si 
+								Don Custodio, isa sa mga kataas-taasang lipon ng 
+								paaralan. <o:p></o:p></span></p>
+								<span lang="EN-US" style="line-height: 115%; mso-fareast-font-family: &quot;MS Mincho&quot;; mso-fareast-theme-font: minor-fareast; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Mayroon silang dalawang taong malalapitan upang 
+								makumbinse nila si Don Custodio. Sila ay sina 
+								Ginoong Pasta na isang manananggol at ang 
+								mananayaw na si Pepay. Napagdesisyunan nila na 
+								si Ginoong Pasta ang kanilang lapitan.</span></td>
+				</tr>
+				<tr>
+								<td class="style35"><strong><br>
+								Kabanata 22 : Ang Palabas&nbsp;</strong></td>
+				</tr>
+				<tr>
+								<td style="height: 26px">
+								<span lang="EN-US" style="line-height: 115%; mso-fareast-font-family: &quot;MS Mincho&quot;; mso-fareast-theme-font: minor-fareast; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								</span><span class="style33">Magulo at maingay ang mausok na paligid at samu't-saring gawain ang ginagawa ng mga tao. Naaliw naman sa panonood ang mga tao sa isang lalaki na nakaupo at ayaw umalis sa pwestong pagmamay-ari ni Don Primitivo. Hindi naman ito mapaalis ng mga tanod sapagkat mataas rin ang pwesto nito. Nang dumating ang Heneral ay tumugtog ang Marcha Real. Masaya ang lahat maliban kay Isagani dahil nakita niya si Paulita na kasama si Juanito Pelaez na kanyang karibal. Umawit ang Pransesang si Gartude ng awitin na puno ng tsismis ng linggo. Isinasalin naman ni Tadeo ang kanta sa Kastila at nakigaya naman si Juanito na hindi naman gaanong maalam sa Pranses. Umawit rin si Serpolette at may isang pumalakpak sa una. Ito ay si Padre Irene na pinag eespiya ni Padre Salvi sa kung masama ba ang ginagawang palabas. Si Juanito ay patuloy sa pagpapanggap na maalam sa Pranses at siyang nakikisabay sa mga tao sa kanilang ginagawa. Kapag ang mga tao'y tumatawa ay tumatawa rin siya na tila kanyang naintindihan ang ugat ng pinagtatawanan. Humanga naman sa kanya si Donya Victorina at ninais niyang pakasalan kapag namatay na si De Espadaña. Umubo nang hindi kanais-nais si Juanito at nagalit si Don Custudio at siya'y sinigawan at nais paalisin. Napag-usapan rin ang hindi pagsipot ni Simoun sa palabas. Pinagtatalunan naman ng mga mag-aaral ang kagandahan at kapangitan ng wikang Pranses. Dumating nang malungkot si Makaraig at sinabing napasiyahan na raw ang paaralan ayon kay Padre Irene. Ito ay pinahintulutan subalit ipapailalim sa Unibersidad ng Sto Tomas sa kamay ng mga Dominikano.</span></td>
+				</tr>
+				<tr>
+								<td class="style31">
+								<span class="style29"><strong>
+								<br>
+								Kabanata 27 : Ang Prayle at Ang Estudyante</strong></span></td>
+				</tr>
+				<tr>
+								<td>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ipinatawag ng isang katedratikong si Padre Fernandez si Isagani at siyang pinuri sa talumpati nito sa pagkakaroon nito ng paninindigan. Sinabi ni Padre Fernandez na marami na siyang naturuan at sinisikap na maturuan na mga estudyante. Ang mga ito ay maraming sinasabi sa mga prayle subalit mga hindi naman makapagsalita sa kanilang harap. Kinontra naman ito ni Isagani at sinabi na hindi kasalanan ng mga ito ang magsalita laban sa nakatataas. Inisa-isa nito ang mga mali at hindi magandang gawain ng mga prayle sa pagtuturo. Aniya na kontratista ang mga prayle dahil sila pa mismo ang nagsasabi na hindi dapat pag-aralin ang mag-aaral. Sinabi naman ng pari na ito daw ay dahil hindi karapat-dapat ang mga walang lakas ng loob at mayroong hindi magandang asal. Tinuran din ni Isagani na kung ganito ang klase ng kabataan ay iyon ay dahil sa kanilang kagagawan bilang sila ang nagtuturo sa mga ito. Ikinatwiran ng pari na ito ay ipinag uutos lamang sa kanila ng pamahalaan. Sinabi nito na hindi daw dapat sa kanila at sa pamahalaan isisi ang pagkakaroon ng masamang ugali ng mga mag-aaral kundi sa masamang pagkakatatag ng kanilang samahan.</span></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style31">
+								<p class="style34"><br>
+								<strong>Kabanata 35 : Ang Piging </strong></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style33">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								&nbsp; Ang mga bisita ay dumating sa bahay ni Kapitan Tiyago sa ikapito ng gabi. Mula sa maliit hanggang sa may malaking katayuan ang pagkakasunod na mga dumating. Ang mga bisita ay pinagpupugayan ni Don Timoteo.Sunod na dumating ang bagong kasal kasama si Donya Victorina. Ang Heneral ay wala pa ngunit si Padre Salvi ay nandoon na. Hindi makapunta ng palikuran si Don Timoteo dahil wala pa ang heneral.Ang Don ay nagalit dahil may pumitas ng kromo sa pader. Sinabi ng Don na iyon ang pinakamahal na mabibili sa maynila. Pagbabayaran niya ang taong pumitas.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								&nbsp; Nawala ang mga dinaramdam ni Don Timoteo at dumating na ang heneral. Si Basilio ay nasa harap ng bahay at pinapanood ang mga nagdadatingan. Naawa siya dahil mga walang malay na mamamatay ang mga tao doon at gusto niya bigyan ang mga ito ng babala ngunit nagbago ang isip niya nang makita niya si Padre Salvi at Padre Irene.Nakita na ni Basilio si Simoun na dala dala ang ilawan. Katakot-takot ang anyo ni Simoun na naliligid ng apoy at parang nag aalinlangan ito sa pagpanhik. Kinausap niya na muna ang Heneral at ibang mga bisita. Saka siya nawala sa paningin ni Basilio.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								&nbsp; Nalimutan nanaman ni Basilio ang masalimuot na nangyari sa kaniyang buhay kaya lumamang ang kaniyang kabutihang loob at gustong iligtas ang mga tao. Ngunit hinadlangan siya ng mga tanod dahil sa kaniyang marusing anyo.Namutla si Simoun nang makita si Basilio na iniwan ng tanod-pinto upang magpugay sa kanya. Nagsasabi sa kaniyang muka na tumuloy sa sasakyan at nag utos ng “sa eskolta, matulin!”. Mabilis na lumayo si Basilio ngunit nakita niya si Isagani na nakatanaw sa bahay kaya niyaya niya itong lumayo. Pinaliwanag niya sa kaniya ang tungkol sa ilawan sabay hila kay Isagani.
+Ngunit mabilis na nagpasya ang binata ng makitang nagpupuntahan na sa kainan ang mga bisita. Naisip niya na kasamang sasabog sa bahay si Paulita.Sa loob ng bahay ay may nakita ang mga nagpipiging na isang kaputol na papel na may nakasulat na
+								<em><br>
+								<br>
+								<strong>MANE THACEL PHARES!
+<br>
+								<br>
+								JUAN CRISOSTOMO IBARRA</strong></em> <br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								&nbsp; Ani ni Don Custodio ay isang biro lamang iyon dahil matagal nang patay si Ibarra. Namutla si Padre Salvi nang makita niya iyon dahil nakalagay ang lagda ni Ibarra napahingi siya ng silya at nanlambot sa takot.Nagbago ang isip ng Kapitan Heneral na magpatawag ng mga kawal dahil ang mga naroroon ay mga utusan na hindi niya kilala kaya sinabi na lamang niya na magpatuloy sa pagkain at huwag pansinin ang mga ganoong biro. Ang Heneral ay nagkunwari lamang na hindi takot kahit ang lahat sa loob ay takot na takot sa nakita.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								&nbsp; Maya- maya ay nagsalita si Don Custodio na sa wari niya na ang ibigsabihin ng sulat ay papatayin silang lahat sa gabing iyon.nakala ng iba na lalasunin sila kaya binitawan nila ang mga hawak nilang kubyertos. Siya namang paglabo ng ilawan.Sinabi ng Kapitan Heneral kay Padre Irene na itaas nito ang mitsa ng ilawan. Biglang may pumasok nang mabilis, tinabig ang utusang humadlang dito saka kinuha ang ilawan, itinakbo sa asotea, at itinapon sa ilog. May ilang nagsabi na magnanakaw iyon kaya may nanghihingi ng baril. Ang anino ng kumuha ng ilawan ay tumalon rin sa ilog.
+</td>
+				</tr>
+				<tr>
+								<td class="style39">
+								<strong><br>
+								<span class="style37">Kabanata 37 : Ang Hiwagaan</span></strong></td>
+				</tr>
+				<tr>
+								<td class="style33">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Lumaganap parin sa mga mamamayan ng palihim ang mga nangyari noong gabi. Dahil ang payat na platerong si Chikoy ay nagdala ng hikaw kay Paulita, nakita niya ang maraming supot ng pulbura sa ilaim ng mesa, silong, bubungan, sa mga likod ng upuan sa baha ni Kapitan Tiyago. Maaring nakaaway ni Don Timoteo o karibal ni Juanito kay Paulita ang maaring gumawa ng bagay na iyon ayon kay Ginoong Pasta. Binalaan si Isagani na magtago ngunit ngiti lamang ang iginanti nito. At dagdag pa ni Chikoy, may dumating na mga sibil ngunit walang mapagbintangan ngunit si Don Timoteo at Simoun lamang ang namahala sa pinagganapan ng piging.Natakot ang babaeng tagapakinig at nagpahayag ng sari saring opinyon na marahil ang prayle, si Quiroga, mga mag aaral o si Makaraig ang may kagagawan. Ngunit sabi pa ni Chikoy, si Simoun ang may pakana ng lahat ayon daw sa ilang kawani dahil ito'y nawawala at pinaghahahanap ng mga sibil. Paglipas ng sandali ay agad namang umalis si Isagani at hindi na bumalik pa sa kanyang amain.&nbsp;</td>
+				</tr>
+</table>
+
+
+
+
+
+<p class="style16" style="position: relative; left: 9px; top: 446px; width: 1331px;">
+<strong>TALAKAYAN</strong></p>
+
+
+
+
+
+<p id="gawain" class="style28" style="position: relative; left: 56px; top: 2634px; width: 488px; height:512px;">
+<span id="gawain" class="style27"><strong>Gawain 1: Talasalitaan</strong></span><span class="style21">
+<br>
+<br>
+<br> <img src="3.6.8 Gawain 1.jpg" width="500" height="378">
+
+
+
+
+
+
+
+
+<p class="style40" style="position: relative; left: 352px; top: 1987px; width: 561px; background-color: #F7CA18;">
+<strong><span lang="en-ph">&nbsp;<span class="style30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MGA KASANAYAN</span></span></strong>&nbsp;</p>
+
+
+
+
+
+
+
+<span class="style23"><strong>
+
+
+
+
+
+
+
+<p id="gawain" class="style25" style="position: relative; left: 637px; top: 1425px; width: 491px; height:566px;">
+<strong>
+<span class="style23"><span class="style26">Gawain 2: Pag-unawa sa Binasa
+<br>
+<br>
+</span></span>
+</strong>
+</strong>
+<span class="style21">1.	Bakit kaya nagpadala si Padre Salvi ng espiya sa palabas?
+<br>
+2.	Sa iyong palagay, paano nasabi ni Simoun na dukha ang isang bayan noon? <br>
+3.	Sang-ayon k a bas a pananaw ng mga prayle sa mga mag-aaral na Pilipino?
+<br>
+4.	Para sa iyo, totoo ba ang sinabi ni Padre Camorra na kaya tamad ang mga Pilipino dahil puro tubig lang ang iniinom at hindi serbesa?
+<br>
+5. Bakit nais bigyan ng babala ni Basilio ang mga tao sa bahay ni Kapitan Tiyago?
+<br>
+6.	Sa iyong palagay, bakit si Simoun ang isa sa pinagbibintangang nagkalat ng pulbura sa bahay ni Kapitan tiyago?
+<br>
+7.	Sino ang tumabig sa utusan at saka kinuha ang ilawan, itinakbo sa asotea at itinapon sa ilog?
+<br>
+8. Bakit napuno ng takot ang mga tao sa nabasang sulat sa bahay ni Kapitan Tiyago?
+<br>
+9. Ano ang dahilan ng pag-imbita ni Makaraig kay Isagani, Sandoval, Pecson at Pelaez?
+<br>
+10. Ano ang ibig ipakahulugan ni Isagani sa “Kapag pinainit ng apoy; sa sandaling ang mumunting ilog na watak-watak ay magkakasama-sama sa kailalimang hinuhukay ng tao.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span><span class="style26">
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="gawain" class="style41" style="position: relative; left: 29px; top: 1384px; width: 491px; height:554px;">
+<span class="style29">Gawain 3 : Pagsasanay<br>
+<br> <img src="3.6.9 Gawain 3.jpg" width="500" height="378"> 
+</span><br> 
+
+</strong> 
+
+<br>
+<span class="style21">&nbsp;</span></p>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="gawain" class="style28" style="position: relative; left: 624px; top: 821px; width: 491px; height:554px;">
+<span class="style29">Gawain 4 : Pangkatang Gawain</span><span class="style21"><br> 
+
+</span>
+<span class="style21"><br>Unang Pangkat: <span class="style42">Pagtalunan ninyo!
+Kung kayo ang tatanungin, ano ang iyong pipiliin ang ipaghanti ang iyong mga mahal sa buhay kahit alam mong maraming tao ang mamamtay o patawarin ang mga ito? Ilahad sa klase ang iyong desisyon sa pamamagitan ng debate.
+</span><br>
+<br>
+Ikalawang Pangkat: <span class="style42">Iarte niyo!
+Pumili ng isang pangyayari na para sa inyo nakaakit sa inyong mga damdamin may ganito rin ba sa kasalukuyan? Ipaliwanag.
+</span><br>
+<br>
+Ikatlong Pangkat: <span class="style42">Iguhit niyo!
+Iguhit sa cartolina o manila paper ang inyong naramdaman matapos basahin ang kabanata, ipaliwanag.
+</span><br>
+<br>
+Ikaapat na pangkat: <span class="style42">Ikanta niyo!
+Pumili ng isang kanta na maaaring ihalintulad sa nararamdaman ni Simoun. Ipaliwanag kung bakit ito ang kanta na inyong napili.
+</span><br>
+<br>
+Ikalimang pangkat: <span class="style42">Markahan niyo!
+Markahan ang presentasyon ng bawat grupo gamit ang rubrik na:</span> <br>
+<br>
+</span></strong>
+<span class="style43"><em>Husay sa paglalahad- 5
+<br>
+</em><em>Aktibong pakikilahok- 2
+<br>
+</em><em>Estratehiya- 2
+<br>
+</em><em>Pagsunod sa oras- 1 </em>
+
+
+
+
+
+
+
+
+</p>
+</span>
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<p class="style16" style="position: relative; left: 7px; top: 754px; width: 1331px;">
+<strong><br>
+<br>
+<img alt="" src="3.6.7 Panapos na Pagtataya.png" width="1000" height="2000"></strong></p>
+
+
+
+</p>
+
+<!***ANSWER KEYSS****!>
+<a class="trigger_popup_fricc">
+<p class="style22" style="position: fixed; left: 1275px; top: 473px; width: 53px; height: 49px;">
+
+<img id="susi" src="Susi.png" width="47" height="49"></p>
+</a>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+     <img src="3.6.10 Answer Keys.jpg" width="400" height="315">
+</div>
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollup").style.display = "block";
+    } else {
+        document.getElementById("scrollup").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<script>
+/*Scroll down hide*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+document.getElementById("hidenavbar").style.top = "0";
+} else {
+document.getElementById("hidenavbar").style.top = "-100px";
+}
+}
+</script>
+                                                          
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<SCRIPT LANGUAGE="JavaScript" SRC="script.js"></SCRIPT>
+
+<script>
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+
+
+
+</script>
+
+
+</html>
+
+
+

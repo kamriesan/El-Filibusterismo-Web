@@ -1,0 +1,3096 @@
+﻿
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="3.8 Si Simoun.css">
+<title>El Filibusterismo | Si Simoun</title>
+<link rel="icon" href="Quill Pen Icon.png">
+
+<style>
+
+ /*==========Global==========*/
+/*==========Basics==========*/
+html {
+scroll-behavior: smooth;
+}
+body {
+background-color: #832e2e;
+}
+
+
+/*==========Sections==========*/
+
+.header {
+text-align: center;
+position: relative;
+z-index: 1;
+				background-image: linear-gradient(to bottom, lighten(@header-background, 15%) 0%, @header-background 100%);
+}
+.header .master-head {
+padding: 7% 30px;
+background-color: #832e2e;
+}
+.header .page-title {
+padding: 0 30px 0 30px;
+font-size: 22px;
+color: #FFF;
+
+}
+.header .page-description {
+margin-top: 400px;
+max-width: 1000px;
+font-size: 28px;
+color: #FFF;
+}
+.header .scroll-button {
+color: #FFF;
+font-size: 20px;
+padding: 15px 20px 15px 20px;
+display: inline-block;
+background: #cdad2d;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.header .scroll-button:hover {
+background: #F7CA18;}
+.header .scroll-button:active {
+background: #194c53;
+}
+.main-content {
+margin: 0px auto;
+position: relative;
+}
+.main-content .section-inner,
+.main-content .post-wrapper {
+*zoom: 1;
+}
+.main-content .section-inner:before,
+.main-content .post-wrapper:before,
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+content: "";
+display: table;
+}
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+clear: both;
+}
+.section .section-inner {
+margin: 0px auto;
+width: 1024px;
+}
+@media only screen {
+.section .section-inner {
+width: auto;
+max-width: 1024px;
+}
+}
+/*==========Stem==========*/
+.stem-wrapper {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 50%;
+}
+.stem-wrapper.color-yellow .stem-background {
+background: #cdad2d;
+}
+.stem-wrapper.color-green .stem-background {
+background: #35C189;
+}
+.stem-wrapper.color-white .stem-background {
+background: #FFF;
+}
+.stem-wrapper .stem,
+.stem-wrapper .stem-background {
+position: absolute;
+top: 0px;
+left: -30px;
+width: 60px;
+}
+.stem-wrapper .stem {
+background: none;
+height: 100%;
+}
+.stem-wrapper .stem-background {
+background: #cdad2d;
+height: 50%;
+transition-duration: 5s;
+}
+.stem-padding,
+.single-stem-icon {
+width: 60px;
+height: 0px;
+margin: 0px auto;
+background: none;
+}
+.single-stem-icon.scroll-to-top {
+cursor: pointer;
+background-image: url('file:///E:/ICT%20x%20Fil/Transferrrrrrrrr/2%20Paglalathala/2%20Paglathala/Scrolltop.png');
+}
+/*==========Post wrapper ==========*/
+.post-wrapper {
+*zoom: 1;
+}
+.post-wrapper:before,
+.post-wrapper:after {
+content: "";
+display: table;
+}
+.post-wrapper:after {
+clear: both;
+}
+.post-wrapper .post {
+position: relative;
+width: 432px;
+padding: 0px 0px 60px 0px;
+clear: both;
+opacity: 1;
+-webkit-perspective: 1000px;
+perspective: 1000px;
+}
+.post-wrapper .post.hidden .post-content {
+-webkit-transform: translateY(100px) rotateX(30deg);
+transform: translateY(100px) rotateX(30deg);
+opacity: 0;
+}
+.post-wrapper .post:hover .post-content,
+.post-wrapper .post.active .post-content {
+opacity: 1;
+}
+.post-wrapper .post:hover .post-content .meta,
+.post-wrapper .post.active .post-content .meta {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post:nth-child(even) {
+float: right;
+}
+.post-wrapper .post:nth-child(odd) {
+float: left;
+}
+.post-wrapper .post:nth-child(even) .stem-overlay {
+left: -110px;
+}
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+right: -110px;
+}
+.post-wrapper .post.Quilllink-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quillink.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Calendar-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Calendar.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Quill-Scroll .stem-overlay .icon {
+background-image: url('Scroll-Quill.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post .stem-overlay {
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 60px;
+}
+.post-wrapper .post .stem-overlay .icon {
+background: transparent no-repeat center center;
+height: 60px;
+width: 60px;
+cursor: pointer;
+}
+.post-wrapper .post .stem-overlay .stem-mask {
+position: absolute;
+top: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: url('stem-mask.png') repeat-y center top;
+}
+.post-wrapper .post .post-content {
+opacity: 0.3;
+transition-duration: 0.4s;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post .post-content .meta {
+color: rgba(255, 255, 255, 0.3);
+margin: 0px 0px 15px 0px;
+letter-spacing: 0px;
+opacity: 0;
+transition-duration: 1s;
+transition-delay: 0.2s;
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+}
+.post-wrapper .post .post-content .post-title {
+font-size: 32px;
+line-height: 60px;
+margin: 0px 0px 15px 0px;
+}
+/*==========Media queries==========*/
+@media only screen and (max-width: 1080px) {
+.main-content,
+.main-content .section-inner {
+max-width: none;
+}
+.stem-wrapper {
+left: 80px;
+}
+.stem-padding,
+.single-stem-icon {
+margin: 0px;
+float: left;
+margin-left: 50px;
+}
+.post-wrapper .post,
+.post-wrapper .post:nth-child(even),
+.post-wrapper .post:nth-child(odd) {
+width: auto;
+margin-left: 110px;
+float: none;
+}
+.post-wrapper .post .stem-overlay,
+.post-wrapper .post:nth-child(even) .stem-overlay,
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+left: -60px;
+right: auto;
+}
+.post-wrapper .post .post-content {
+padding: 0px 50px;
+}
+}
+@media only screen and (max-width: 700px) {
+.header .page-title {
+font-size: 40px;
+}
+.post-wrapper .post {
+margin-left: 90px !important;
+}
+.post-wrapper .post .post-content {
+padding: 0 25px;
+}
+.stem-wrapper {
+left: 60px;
+}
+.stem-padding,
+.single-stem-icon {
+margin-left: 30px;
+}
+}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+VIEW LESS CODE VIEW RESOURCES 1×
+0.5×
+0.25×
+ RERUN
+.style1 {
+				color: #fff;
+}
+.style2 {
+				font-size: large;
+				color: #fff;
+}
+
+
+
+
+.style5 {
+				font-family: "Times New Roman", Times, serif;
+}
+.next {
+background-color: #fff;
+color: black;
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+		
+.next:hover {
+background-color: grey;
+transition: .5s;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+
+}
+
+a {
+text-decoration: none;
+}
+.style13 {
+				margin-left: 40px;
+}
+.style14 {
+				margin-left: 80px;
+				margin-top: 0px;
+}
+.style15 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFFFFF;
+}
+.style16 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+.style17 {
+				margin-top: 1px;
+}
+
+.zoomimage-card {
+position: relative;
+top: 0;
+left: 0;
+
+
+}
+
+.style21 {
+				font-size: large;
+}
+
+.style22 {
+				margin-left: 40px;
+				text-align: left;
+				font-size: xx-large;
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.style23 {
+				font-size: x-large;
+}
+
+.style26 {
+				color: #F7CA18;
+}
+
+.style29 {
+				font-size: x-large;
+				color: #FFCC00;
+}
+
+.style31 {
+				text-align: center;
+}
+.style33 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: large;
+				color: #FFFFFF;
+}
+
+.style34 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: x-large;
+				color: #FFCC00;
+}
+.style35 {
+				text-align: center;
+				font-size: x-large;
+				font-family: "Times New Roman", Times, serif;
+				color: #FFCC00;
+}
+
+.style37 {
+				color: #FFCC00;
+}
+
+.style39 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: x-large;
+				color: #FFFFFF;
+				text-align: center;
+}
+
+pre
+	{margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+					margin-left: 0in;
+				margin-right: 0in;
+				margin-top: 0in;
+}
+
+.style44 {
+				margin-left: 40px;
+				text-align: left;
+				font-size: large;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+
+.style45 {
+				font-family: "Times New Roman", Times, serif;
+				font-size: large;
+				color: #FFFFFF;
+				text-align: center;
+}
+
+.style46 {
+				font-size: large;
+				font-family: "Times New Roman", Times, serif;
+}
+.style47 {
+				color: #FFFFFF;
+}
+
+.style49 {
+				color: #832E2E;
+				text-align: center;
+				font-size: large;
+				background-color: #F7CA18;
+}
+.style50 {
+				font-size: xx-large;
+}
+
+.style51 {
+				margin-top: 0px;
+}
+
+.style53 {
+				color: #FFCC00;
+				font-size: xx-large;
+}
+
+.style54 {
+				text-align: left;
+}
+
+.style57 {
+				color: #FFCC00;
+				font-family: "Times New Roman", Times, serif;
+}
+
+.style58 {
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+}
+
+.style59 {
+				text-align: center;
+				font-size: x-large;
+				color: #FFCC00;
+}
+
+</style>
+</head>
+
+
+
+<!****Nav Bar****!>
+<p></p>
+<div id="hidenavbar" style="z-index: 8"> <Center>
+
+	
+<ul><font face="Times New Roman">
+
+<li><div class="dropdown"><a href="2 Paglathala.html">Paglathala</a>
+
+
+<li><div class="dropdown"><a href="3 Mga Aralin.html">Mga &nbsp;Aralin</a>
+
+<div class="dropdown-content"> 
+<a href="3.2 Kaligirang Pangkasaysayan.html">Aralin 1</a>
+<a href="3.3 Si Basilio.html">Aralin 2</a>
+<a href="3.4 Si Kabesang Tales.html">Aralin 3</a>
+<a href="3.5 Si Juli.html">Aralin 4</a>
+<a href="3.6 Si Isagani.html">Aralin 5</a>
+<a href="3.7 Si Padre Florentino.html">Aralin 6</a>
+<a href="3.8 Si Simoun.html">Aralin 7</a>
+</div> 
+
+</li>
+<a href="../index.html">
+				<img alt=Icon src="NavIcon.png" width="200" height=60></a>
+<li><div class="dropdown"><a href="4 Mga Tauhan.html">Mga Tauhan</a>
+
+<div class="dropdown-content"> 
+
+<a href="4 Mga Tauhan.html#Simoun">Simoun</a>
+<a href="4 Mga Tauhan.html#Basilio">Basilio</a>
+<a href="4 Mga Tauhan.html#Isagani">Isagani</a>
+<a href="4 Mga Tauhan.html#Macaraig">Macaraig</a>
+<a href="4 Mga Tauhan.html#Kabesang Tales">Kabesang Tales</a>
+<a href="4 Mga Tauhan.html#Padre Florentino">Padre Florentino</a>
+<a href="4 Mga Tauhan.html#Don Custodio">Don Custodio</a> 
+<a href="4 Mga Tauhan.html#Jograt">Jograt</a>
+<a href="4 Mga Tauhan.html#Paulita Gomez">Paulita Gomez</a>
+<a href="4 Mga Tauhan.html#Juli">Juli</a>
+<a href="4 Mga Tauhan.html#Juanito Pelaez">Juanito Palaez</a>
+<a href="4 Mga Tauhan.html#Donya Victorina">Donya Victorina</a>
+<a href="4 Mga Tauhan.html#Padre Camorra">Padre Camorra</a>
+<a href="4 Mga Tauhan.html#Ben-Zayb">Ben-Zayb</a> 
+<a href="4 Mga Tauhan.html#Placido Penitente">Placido Penitente</a>
+<a href="4 Mga Tauhan.html#Tiburcio de Espadana">Tiburcio de Espadaña</a>
+<a href="4 Mga Tauhan.html#Hermana Penchang">Hermana Penchang</a>
+<a href="4 Mga Tauhan.html#Padre Irene">Padre Irene</a>
+<a href="4 Mga Tauhan.html#Quiroga">Quiroga</a>
+<a href="4 Mga Tauhan.html#Don Timoteo Palaez">Don Timoteo Palaez/a>
+<a href="4 Mga Tauhan.html#Tandang Selo">Tandang Selo</a> 
+<a href="4 Mga Tauhan.html#Padre Fernandez">Padre Fernandez</a>
+<a href="4 Mga Tauhan.html#Sandoval">Sandoval</a>
+<a href="4 Mga Tauhan.html#Hermana Bali">Hermana Bali</a>
+<a href="4 Mga Tauhan.html#Padre Millon">Padre Millon</a>
+<a href="4 Mga Tauhan.html#Tadeo">Tadeo</a>
+<a href="4 Mga Tauhan.html#Leeds">Leeds</a>
+<a href="4 Mga Tauhan.html#Tano">Tano</a> 
+<a href="4 Mga Tauhan.html#Pepay">Pepay</a>
+<a href="4 Mga Tauhan.html#Gobernador Heneral">Gobernador Heneral</a>
+<a href="4 Mga Tauhan.html#Padre Hernando De la Sibyla">Padre Hernando De la Sibyla</a>
+<a href="4 Mga Tauhan.html#Pecson">Pecson</a>
+<a href="4 Mga Tauhan.html#Padre Bernardo Salvi">Padre Bernardo Salvi</a>
+<a href="4 Mga Tauhan.html#Kapitan Tiyago">Kapitan Tiyago</a>
+
+
+</div> 
+
+</li><li><div class="dropdown"><a href="5 Mga Kabanata.html">Saliksikin</a>
+
+<div class="dropdown-content"> 
+<a href="5 Mga Kabanata.html#1">Kabanata 1</a>
+<a href="5 Mga Kabanata.html#2">Kabanata 2</a>
+<a href="5 Mga Kabanata.html#3">Kabanata 3</a>
+<a href="5 Mga Kabanata.html#4">Kabanata 4</a>
+<a href="5 Mga Kabanata.html#5">Kabanata 5</a>
+<a href="5 Mga Kabanata.html#6">Kabanata 6</a>
+<a href="5 Mga Kabanata.html#7">Kabanata 7</a>
+<a href="5 Mga Kabanata.html#8">Kabanata 8</a>
+<a href="5 Mga Kabanata.html#9">Kabanata 9</a>
+<a href="5 Mga Kabanata.html#10">Kabanata 10</a>
+<a href="5 Mga Kabanata.html#11">Kabanata 11</a>
+<a href="5 Mga Kabanata.html#12">Kabanata 12</a>
+<a href="5 Mga Kabanata.html#13">Kabanata 13</a>
+<a href="5 Mga Kabanata.html#14">Kabanata 14</a>
+<a href="5 Mga Kabanata.html#15">Kabanata 15</a>
+<a href="5 Mga Kabanata.html#16">Kabanata 16</a>
+<a href="5 Mga Kabanata.html#17">Kabanata 17</a>
+<a href="5 Mga Kabanata.html#18">Kabanata 18</a>
+<a href="5 Mga Kabanata.html#19">Kabanata 19</a>
+<a href="5 Mga Kabanata.html#20">Kabanata 20</a>
+<a href="5 Mga Kabanata.html#21">Kabanata 21</a>
+<a href="5 Mga Kabanata.html#22">Kabanata 22</a>
+<a href="5 Mga Kabanata.html#23">Kabanata 23</a>
+<a href="5 Mga Kabanata.html#24">Kabanata 24</a>
+<a href="5 Mga Kabanata.htmxl#25">Kabanata 25</a>
+<a href="5 Mga Kabanata.html#26">Kabanata 26</a>
+<a href="5 Mga Kabanata.html#27">Kabanata 27</a>
+<a href="5 Mga Kabanata.html#28">Kabanata 28</a>
+<a href="5 Mga Kabanata.html#29">Kabanata 29</a>
+<a href="5 Mga Kabanata.html#30">Kabanata 30</a>
+<a href="5 Mga Kabanata.html#31">Kabanata 31</a>
+<a href="5 Mga Kabanata.html#32">Kabanata 32</a>
+<a href="5 Mga Kabanata.html#33">Kabanata 33</a>
+<a href="5 Mga Kabanata.html#34">Kabanata 34</a>
+<a href="5 Mga Kabanata.html#35">Kabanata 35</a>
+<a href="5 Mga Kabanata.html#36">Kabanata 36</a>
+<a href="5 Mga Kabanata.html#37">Kabanata 37</a>
+<a href="5 Mga Kabanata.html#38">Kabanata 38</a>
+<a href="5 Mga Kabanata.html#39">Kabanata 39</a>
+
+
+
+</div> 
+
+
+</ul>
+</font>
+</div>
+
+
+</ul>
+</font>
+</div>
+S
+
+</ul>
+</font>
+</div>
+
+<div class="stem-wrapper">
+<div class="stem" style="right: 1311px"></div>
+</div>
+<header class="section header">
+<div class="section-inner">
+
+<div class="master-head" style="height: 1307px">
+<class="page-title"><div class="mask pseudo">
+<a href="#" class="style2" style="left: -51px; top: 114px">
+<img src="3.8.1 Title.png" alt="El Fili" width="780" height="150" />
+</a>
+</div>
+<p class="style13">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<img alt="" id="one" src="3.8.2 White.png" height="654" style="position: absolute; left: 669px; top: 646px" class="style17" width="718"><br><br><br><br>
+</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">
+<img alt="" src="3.8.3 Layunin.jpg" width="624" height="510" style="position: absolute; left: 717px; top: 693px"></p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style16" style="position: relative; left: -18px; top: -14px">
+<strong>PANIMULA KAY SIMOUN</strong></p>
+
+
+<p class="style44" style="position: relative; left: -18px; top: -14px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Si Simoun ang pangunahing karakter sa dalawang nobela ni Jose Rizal. Bilang Crisostomo Ibarra (na kanyang tunay na pangalan), siya ang pangunahing tauhan sa unang nobelang ni Rizal, Noli Me Tangere. Sa unang nobela, Isa siyang ideyalista na naniniwala na ang mga repormang panlipunan ay maaaring magtapos sa mga kanser sa lipunan, at sumasalungat sa pinuno ng Espanya. Sa ikalawang nobela ni Rizal, bumalik siya bilang isang mayaman na tindero ng alahas na si Simoun. Siya ay hinimok ng kanyang mga karanasan sa pagmamaltrato sa mga Pilipino sa kamay ng mga Kastila at ang matinding galit sa mga naging sawing-kapalaran ni Maria Clara.
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Si Crisostomo Ibarra ay nagbalik bilang isang mayamang nagtitinda ng alahas sa ilalim ng pangalan na Simoun. Siya ay kilala bilang impluwensyal sa kolonyal na gobyerno ng Espanya sa Pilipinas at may ugnayan sa Kapitan-Heneral. Inabandona niya ang kanyang mga ideyalistang pananaw matapos ang mga trahedya sa huling nobela. Naniniwala siya na ang mabagsik at marahas na rebolusyon ay ang tanging paraan upang magwawakas ang pang-aabuso ng mga Espanyol, lalo na ang mga prayle at pari. Nais niyang gawin ito sa pamamagitan ng pag-impluwensya sa Kapitan-Heneral upang gumawa ng maling mga desisyon na hahantong sa karagdagang paghihirap ng mga Pilipino. Naniniwala siya na ang paggawa nito ay magmumulat ng kanilang mga mata sa katotohanan at magsimula ng rebolusyon. Ang kanyang iba pang mga layunin ay upang magbakante Maria Clara mula sa kumbento.
+	
+	<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang pagkamatay ni Maria Clara habang naglilingkod sa kumbento ang lalong ang nagdulot kay Simoun upang higit pang ituloy ang kanyang mga plano.
+&nbsp;</p>
+
+
+<img alt="" src="3.8.4 Simoun.png" width="691" height="655" style="position: absolute; left: -3px; top: 647px; z-index: 9;"><p class="style14" style="position: absolute; left: 1097px; top: 1168px">
+&nbsp;<a href="#one"><class onclick="topFunction()" class="scroll-button"><font color="black" size="4" face="century gothic"><span class="style5">Magpatuloy</span></button>
+ 
+
+</font></a>
+</p>
+ 
+</div>
+</header>
+</div>
+
+<div id="Banner1" style="width: 856px; height: 413px; position: absolute; left: 240px; top: 1849px;" class="style17">
+&nbsp;<img src="3.8.5 Simoun Banner.jpg" height="417"></div>
+ <p class="style16" style="position: relative; left: -14px; top: 837px; width: 1331px; height: 2046px;">
+<strong><br>
+<br>
+<img alt="" src="3.8.6 Paunang Pagtataya.png" width="1000" height="2000"></strong></p>
+
+<table style="width: 75%; left: 196px; position: absolute; top: 4340px; z-index: 4;">
+			<tr>
+		<td class="style59" style="width: 1251px"><strong>Kabanata 1 : Sa Ibabaw 
+		ng Kubyerta</strong></td>
+	</tr>
+				<tr>
+								<td style="width: 1251px">
+								<p class="MsoNormal"><span class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								</span><span class="style2">Isang umaga ng Disyembre, naglalayag sa ilog Pasig ang Bapor Tabo patungong Laguna. Makikita sa ibabaw ng kubyerta sina Don Custodio, Ben Zayb, Donya Victorina, Kapitan Heneral, Padre Irene, Padre Salvi, at Simoun.
+								</span>
+								<p class="MsoNormal">&nbsp; <span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ginagalang ng mga tao si Simoun dahil, na naiimpluwensiyahan nito ang Kapitan Heneral.
+								</span>
+								<p class="MsoNormal">&nbsp; <span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Napag-usapan sa ibabaw ng kubyerta ang pagpapalalim ng ilog Pasig habang sila ay naglalakbay.Sa kanilang usapan ay iminungkahi ni Simoun na gumawa ng tuwid na kanal na mag-uugnay sa lawa ng Laguna at sa look ng Maynila.
+								</span>
+								<p class="MsoNormal">&nbsp; <span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang mungkahi naman ni Don Custodio ay ang pag-alagain ang mga tao ng itik. Kinakain kasi ng mga itik ang mga suso sa ilog, kaya huhukayin ng mga tao ang ilog upang may makuhang suso na kanilang ipapakain sa mga alagang itik. Ngunit hindi sang-ayon si Donya Victorina dito dahil nandidiri siya sa balot.
+				<tr>
+								<td class="style31" style="width: 1251px"><span class="style34">
+								<strong><br>
+								Kabanata 2 : Sa Ilalim ng Kubyerta</strong></span></td>
+				</tr>
+				<tr>
+				<td class="style33" style="width: 1251px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pumunta si Simoun sa ilalim ng kubyerta. Naroon din ang dalawang estudyate na sina Basilio na nag-aaral ng medisina at mahusay nang manggamot, at si Isagani na isang makata at katatapos pa lamang sa Ateneo.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sa kanilang pag-uusap kasama si Basilio nadaanan  ang tungkol kay Kapitan Tiyago. Pinauwi raw siya ni Padre Irene na tagapayo ng kapitan nitong mga nagdaang araw.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Napunta naman ang usapan sa isang paaralan.  Ayon kay Kapitan Basilio ay hindi ito magtatagumpay na hindi sinang-ayunan ng kanyang mga kausap kaya’t lumayo na si Basilio.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Napag-usapan din  nila si Paulita Gomez, angmagandang kasintahan ni Isagani, mayaman at may pinag-aralan na pamangkin ni Donya Victorina. Ipinahahanap ng Donya kay Isagani ang kanyang asawa na si Don Tiburcio de Espadaña na nagtatago.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ilang sandali pa’y dumating si Simoun at kinausap ng magkabigan. Agad na ipinakilala ni Basilio kay Simoun si Isagani.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wika ni Simoun, hindi niya nadadalaw ang lalawigan nina Basilio dahil ito  ay mahirap at walang kakayahang makabibili ng alahas, na tinutulan naman ni Isagani at sinabing hindi sila namimili ng alahas dahil hindi naman nila kailangan. Napangiti si Simoun sa sinabi ng binata. Paliwanag niya, dukha ang lalawigan dahil Pilipino ang mga pari sa simbahan.
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inanyayahan ni Simoun ang magkaibigan sa pag-inom ng serbesa na tinanggihan ng dalawa. Ayon kay Simoun, sinabi ni Padre Camorra na kaya tamad ang mga Pilipino ay dahil pala-inom ng tubig at hindi ng serbesa.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sinagot siya ni Basilio at sinabing, “sabihin niyo kay Padre Camorra na kung siya ay iinom ng tubig sa halip ng serbesa, marahil ay mawawala ang sanhi ng mga usap-usapan.”
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dagdag pa ni Isagani, “lumuluhod sa alak at sa serbesa na pumapatay ng apoy; na kap<span class="style21"></span>ag pinainit ay sumusulak; nagiging malawak na dagatan at gumugunaw ng santinakpan.”
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tinananong naman ni Simoun kung ano ang isasagot niya sakaling itanong ni Padre Camorra kung kailan magiging sulak at malawak na karagatan ang tubig.
+ 				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Kapag pinainit ng apoy; sa sandaling ang mumunting ilog na watak-watak ay magkakasamasama sa kailalimang hinuhukay ng tao,” sagot ni Isagani.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Idinagdag rin Basilio ang isang tula ni Isagani tungkol sa pagtutulungan ng apoy at tubig para mapatakbo sa makina (steam engine). 
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nang umalis na si Simoun ay saka lamang nakilala nang lubusan ni Isagani ang mag-aalahas na tinatawag ding Kardinal Moreno.
+				<br>
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maya-maya pa’y ipinatawag ng utusan ang pamangkin ni Padre Florentino. Pero nang nakita ng kapitan ang pari, agad itong inanyayahang pumanhik sa ibabaw ng kubyerta.
+
+				
+				
+				</td>
+				
+				</tr>
+
+				<tr>
+								<td class="style35" style="width: 1251px"><strong><br>
+								Kabanata 3 : Ang Mga Alamat&nbsp;</strong></td>
+				</tr>
+				<tr>
+								<td style="height: 26px; width: 1251px;">
+								<span lang="EN-US" style="line-height: 115%; mso-fareast-font-family: &quot;MS Mincho&quot;; mso-fareast-theme-font: minor-fareast; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sa pagpunta ni Padre Florentino sa kubyerta nakita niya na nagtatawanan ang mga tao roon.  Paksa ng usapan ng mga pari ang pagkamulat ng mga Pilipino at pag-uusig sa mga bayarin sa simbahan.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dumating si Simoun at sinabing walang kwenta sa kanya ang mga pook na kanyang makikita kung wala rin namang alamat ang mga ito.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaya naman nagsalaysay ang Kapitan tungkol sa alamat ng Malapad-na-Bato.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ito ay banal sa mga katutubo noong una bilang tahanan ng mga espiritu. Nang tirahan daw ito ng mga tulisan ay nawala ang takot sa espiritu, sa halip ay nasalin sa mga tulisan ang takot, ang sabi ng Kapitan.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nabanggit ng Kapitan ang alamat tungkol kay Donya Geronima na ipinaubaya kay Padre Florentino ang pagsasalaysay ng alamat.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May magkasintahan umano sa Espanya at ang lalaki ay naging arsobispo sa Maynila. Nagbalatkayo daw ang babae, sinundan ang kasintahan sa Maynila at hinihiling na sundin nito ang pangako na magpakasal sila ngunit sa halip na pakasal ay itinira niya ang babae sa isang yungib na malapit sa Ilog Pasig.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nainggit si Donya Victorina at nais ding manirahan sa kweba.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nag tanong naman si Simoun kay Padre Salvi ng, “Sa inyong palagay, hindi ba higit na mainam ay ilagay sa isang beateryo tulad ni Sta. Clara?” Sinagot ng pari ang tanong at sinabing hindi siya makahahatol sa mga ginawa ng isang arsobispo.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Upang mabago ang usapin ay isinalaysay ang alamat ni San Nicolas na nagligtas sa isang Intsik sa pagkamatay sa mga buwaya. Naging bato diumano ang mga buwaya ng dasalan ng Intsik ang santo.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nang datnan ng bapor ang lawa ay nagtanong si Ben Zayb sa Kapitan kung saan banda doon napatay ang isang Guevarra, Navarra o Ibarra.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Itinuro naman ng Kapitan kung saan. Ayon kay Padre Salvi nagkasama daw ang bangkay ng mag-ama. Dagdag naman ni Ben Zayb, ‘yon daw ang pinakmurang libing. Kaya naman nagtawanan ang iba.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Namutla naman si Simoun at walang kibo at akala ng kapitan na siya ay nahihilo lamang.
+</span></td>
+				</tr>
+				<tr>
+								<td class="style31" style="width: 1251px">
+								<br>
+								<span class="style29"><strong>
+								Kabanata 7 : Si Simoun</strong></span></td>
+				</tr>
+				<tr>
+				<td>
+								<p class="MsoNormal">
+								&nbsp;<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Uuwi na sana si Basilio nang may nakita paparating. Nagtago siya sa puno ng baliti at nakita ang pagtigil ng taong dumating na nagsimulang maghukay gamit ang asarol.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nakilala siya ni Basilio na siya ay si Simoun. Siya rin ang taong tumulong sa pagpapalilibing sa isang lalaking sugatan at sa kanyang ina labing-tatlong taon na ang lumipas.
+ </span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lumapit kay Simoun si Basilio upang tumulong. Ngunit biglang itinutok sa kanya ang baril ni Simoun at itinanong kung siya ay nakikilala nito.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tumugon si Basilio at sinabi na nakikilala siya nito at alam niyang siya si Ibarra labing tatlong taon na ang nakakalipas na inaakala ng lahat na siya ay patay na. 
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Malaking sikreto ang nalalaman ni Basilio kaya binalak niyang patayin ito.Ngunit dahil sa halos pareho sila ng sinapit ni Basilio at uhaw din sa katarungan ay dapat daw silang magtulungang dalawa.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inamin ni Simoun na ang kanyang sikreto at ikinuwento na nilibot niya ang buong daigdig upang maging handa sa kanyang pagbabalik at mapabagsak ang pamahalaang sumira sa kanyang buhay.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Siya raw ay bumalik upang ibalik ang katarungan na ipinagkait ng simbahan at pamahalaan.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Hindi rin sang-ayon si Ibarra sa plano nina Basilio na pagtatayo ng paraalan ng Wikang Kastila at sa paghingi nilang gawing lalawigan ng Espanya ang Pilipinas, na ayon kay Simoun, magbibigay lamang ito ng daan sa Pilipinas sa pagiging bayang walang sariling pagkukuro, walang kalayaan at pati kapintasan ay hiram dahil sa pagpipilit manghiram ng wika.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Katwiran naman ni Basilio, ang kastila umano ay isang wikang magbubuklod-buklod sa mga pulo ng Pilipinas.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bagay na hindi sinang-ayunan ni Simoun. Kailan man ay di raw magiging wikang pangkalahatan sa bayang ito ang wikang Kastila. Dahil magdudulot lamang ito ng pagkawala ng sariling kakayahan, pagpapailalim sa ibang utak, at pagkaalipin sa mga Pilipino. Mabuti raw kung ayaw silang turuan ng mga Kastila ng kanilang wika. Mas maganda umano na paunlarin ang sariling wika nang mawala ang pagtatangi-tangi at magkaroon ng mga layuning pambansa.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dapat din ay huwag hayaang ang Kastila na sila ang maghari at maging bahagi ng bayang ito dahil sila’y mga manlulupig at dayuhan. Saganitong paraan matatamo ang tunay na paglaya.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inamin ni Simoun na ito ang dahilan kung bakit hinayaan niyang mabuhay si Basilio, Isagani at Makaraig na binalak niyang patayin dahil maaaring maging hadlang sa kanyang paghihiganti.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paliwanag naman ni Basilio napasang-ayon lamang siya sa kahilingang tungkol sa paaralan dahil inaakala niyang iyon ang mabuti. Ngunit sa panggagamot daw talaga ang hangarin niya.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hindi makapanggagamot nang mahusay si Basilio ayon kay Simoun dahil mas dapat umanong unahing gamutin ang sakit ng bayan.Ngunit para kay Basilio, kaya nga daw niya pinili ang siyensiya ay upang makapaglingkod sa bayan. 
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Napansin ni Simoun na tila hindi naantig ang kalooban ni Basilio kaya sinabi nya na wala namang ginagawa si Basilio kundi tangisan ang bangkay ng kanyang ina. Tutulungan daw niya si Basilio sa paghihiganti.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ngunit ano naman daw ang mapapala niya sa paghihiganti kung hindi Nito maibabalik ang kanyang ina at kapatid, sagot ni Basilio.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ngunit tinugon siya ni Simoun na ang pagpapaumanhin ay kasalanan kung nagbibigaay-daan sa pang-aapi. Walang mang-aalipin kung walang paaalipin.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saka ipinaalala ni Simoun na sa pag-aaral ni maaaring danasin nito ang dinanas ni Ibarra. Nagtaka si Basilio dahil siya na ang inapi ay siya pa rin ang kinamumuhian.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sagot ni Simoun, likas ang mamuhi sa kanyang inaapi.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dagdag pa ni Simoun, walang hangad si Basilio kundi isang tahanan, kaunting kaginhawahan, asawa; isang dakot na bigas na mithiin rin ng marami sa Pilipinas, na kung mangyari ay papalagaying sila ay mapalad na.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matapos sabihing malaya si Basilio sa pagsisiwalat ng kanyang lihim ay sinabing kung may kailangan si Basilio ay pumunta lamang sa kanyang tanggapan sa Escolta.
+</span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="line-height: 115%;" class="style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nagpasalamat naman si Basilio. Di raw kaya niya napaniwala si Basilio sa paghihiganti o may balak din itong maghiganti ngunit naglilihim lamang at nais sarilinin o sadyang wala nang hangad na maghiganti?, ang iniisip ni Simoun.Ngunit lalong nanaig sa loob ni Simoun ang matinding nais na makapaghiganti.
+</span></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style31" style="width: 1251px">
+								<p class="style34"><br>
+								<strong>Kabanata 10 : Kayamanan at Karalitaan </strong></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+														Nakipanuluyan si Simoun sa bahay ni Kabesang Tales.Naghihirap na noon si Kabesang Tales samantalang napakaginhawa ni Simoun.Ipinagmalaki rin niya sa Kabesa ang kaniyang rebolber. Maya-maya pa’y nagdatingan na ang mga taong mamimili ng alahas.
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dumating sina Kapitan Basilio, ang anak nitong si Sinang at asawa nito, at si Hermana Penchang na mamimili ng isang singsing na brilyante para sa birhen ng Antipolo. 
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sa mga bagong hiyas ni Simoun namili si Sinang. Sinabi rin ni Simoun na namimili rin siya ng alahas at tinanong niya si Kabesang Tales kung may ipagbibigli ito.Iminungkahi ni Sinang ang kwintas na agad gusting bilhin ni Simoun nang makilala niyang kay Maria Clara ang kwintas.
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ngunit ayon kay Hermana Penchang ay hindi daw dapat iyon ipagbili ni Kabesang Tales dahil pinaghirapan talaga ni Huli ang kwintas. Magpaalam  daw muna si Kabesang Tales sa anak ang bagay na iyon na sinang-ayunan naman ni Simoun.
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nang lumabas si Kabesang Tales ay nakita niya ang prayle at ang bagong may-ari ng kanyang lupa.Kinabukasan, wala na si Kabesang Tales sa kanyang tirahan at ang rebolber ni Simoun at ang naroroon lamang ay isang sulat at kuwintas na nais bilhin ni Simoun.
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Humingi ng paumanhin si Kabesang Tales sa pagkuha niya ng baril ni Simoun dahil kinailangan niyang sumapi sa mga tulisan. Hinuli ng mga gwardiya sibil si Tandang Selo. Natuwa naman si Simoun dahil sa wakas ay natagpuan na niya ang taong kanyang hinahanap, isang pangahas ngunit marunong tumupad sa mga pangako.
+														<br>
+														<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samatala, tatlo ang pinatay ni Kabesang Tales: ang prayle, ang lalaking gumagawa sa lupa, at ang asawa nito na putol ang leeg at puno ng lupa ang bibig. Sa tabi ng bangkay ng babae ay may papel na may nakasulat na “Tales” na isinulat gamit ang dugo.
+					</tr>
+				<tr>
+								<td class="style39" style="width: 1251px">
+								<strong><br>
+								<span class="style37">Kabanata 11 : Los Banos</span></strong></td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang Kapitan Heneral ay nangaso sa Boso-boso pero wala siyang nahuli dahil sa takot ng mga hayop sa dala niyang musiko. Ito ay ikinatuwa naman ng Heneral dahil ayaw niyang malaman ng mga kasama niya na wala siyang alam sa pangangaso. Kaya naman sila ay umuwi na lamang sa bahay ng Kapitan Heneral.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Naglaro ng baraha sina Padre Irene, Padre Sybila at ang Kapitan sa isang bahay-aliwan sa Los Baños. Laging talo si Padre Camora kung kaya't siya ay nainis. Hindi nagtagal ay pinalitan siya ni Simoun sa paglalaro.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pumayag si Simoun na itaya ang kanyang mga alahas, ngunit dapat ay ipupusta ng mga prayle ang pangakong magpapakasama sa loob ng limang araw, at ang sa Kapitan Heneral naman ay ang pagbibigay ng kapangyarihan kay Simoun na magpakulong at magpatapon ng kahit na sinong kanyang nanaisin.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Napalapit sina Don Custodio, Padre Fernandez at ang Mataas na Kawani dahil sa mga kakaibang kundisyong binigay ni Simoun. Tinanong ng Mataas na Kawani kung ano ang mapapala ni Simoun sa kanyang mga kundisyon.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sinabi ni Simoun na para daw luminis ang bayan at maalis na lahat ang masasamang damo.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Iniisip ng mga nakarinig na kaya ganun na lamang ang kaisipan ni Simoun ay dahil sa pagkakaharang sa kanya ng mga tulisan.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ayon naman kay Simoun, walang kinuha sa kanya kundi ang dalawa niyang rebolber at mga bala. Kinamusta pa nga daw ng mga ito ang Kapitan Heneral at sinabing marami raw baril ang mga tulisan.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sumagot naman ang Heneral at sinabing ipagbabawal niya ang mga sandata.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Marangal daw ang mga tulisan ayon kay Simoun. Sila lamang raw ang tanging marangal na kumikita ng ikabubuhay nila.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dagdag pa ni Simoun, “Halimbawa, pawawalan ba ninyo ako nang di man lang kukunin ang aking mga alahas? Ang kasamaan ay wala sa mga tulisan sa bundok nasa mga tulisan sa bayan at siyudad.”
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Gaya ninyo”, ani Padre Sibylang nakatawa.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Gaya natin”, ganti ni Simoun, “Tayo nga lamang ay mga di-hayagang tulisan.”
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kalahating oras na lamang ang natitira bago magtanghalian kung kaya't tinigil na ng Kapitan Heneral ang laro. Maraming pa silang pag-uusapang suliranin.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kabilang dito ang pagbabawal ng Heneral sa armas de salon.Bagama't tutol ang Mataas na Kawani dito subalit wala naman siyang nagawa. Nagbigay pa ng payo si Simoun na huwag ipagbawal ang armas de salon sa halip ay magkaroon na lamang ng iisang sukat na kasalukuyang nabibili noon. At ito ang nasunod.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sumunod na pinag-usapan ay ang paraalan sa Tiyani. Kaagad tinutulan ng Kapitan Heneral ang mungkahi ni Don Custodio na gawin paaralan ang sabungan kahit sa loob ng isang araw sa isang linggo.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang ilan sa mga pari ay tutol sa pagpapatayo ng Akademya dahil sa ito’y makakaepekto sa karapatan, isang paghihimagsikan at dapat daw ay hindi nag-aaral ang mga Indiyo.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sumang-ayon dito si Simoun at sinabi na ito’y kahina-hinala. Kaya naman pinutol na ng Heneral ang usapin at sinabing pag-iisipan niya ang mga bagay na iyon.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maya-maya ay dumating ang kura ng Los Baños na nagsabing handa na ang pagkain.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang kawani naman ay bumulong sa Kapitan Heneral na si Juli ay tatlong araw na pabalik-balik at nagmamakaawa na palayain ang kanyang nuno.
+								<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sinang-ayunan naman ito ni Padre Camorra kaya pumayag rin ang Heneral.
+</td>
+				</tr>
+				<tr>
+								<td class="style45" style="width: 1251px">
+								<br>
+								&nbsp;<strong><span class="style29">Kabanata 16: Ang 
+								Kasawian ng Isang Intsik</span></strong></td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								Isang negosyanteng Intsik na nagngangalang Quiroga ang naghahangad na magkaroon ng konsulado ang kanyang bansa kaya siya ay naghandog ng isang hapunan. Ang mga tanyag na panauhin ay dumalo kabilang na ang mga kilalang mangangalakal, mga pari, mga militar, mga kawani ng pamahalaan pati na din ang kanilang mga suki.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Siningil si Quiroga ni Simoun sa kanyang utang na may halagang siyam na libong piso nang siya ay makarating. Nalulugi daw si Quiroga kung kaya't hindi siya makakabayad sa mag-aalahas.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inalok siya ni Simoun na babawasan ng dalawang libong piso ang utang kung papayag umano si Quiroga na itago sa kanilang bodega ang mga armas na dumating.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hindi daw dapat mangamba ang Intsik dahil ang mga baril ay unti-unting ililipat sa ibang bahay na pagkatapos ay gagawan ng pagsisiyasat at marami ang mabibilango. Siya ay lalakad sa mga mapipiit upang kumita. Si Quiroga naman ay napilitang sumang-ayon.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Samantala, nag-uusap ang pangkat ni Don Custodio tungkol sa komisyong ipapadala sa India para pag-aralan ang paggawa ng sapatos para sa mga sundalo.
+Pinag-uusapan ng grupo ng mga prayle ang tungkol sa 'di umano'y ulong nagsasalita sa may perya sa Quiapo na pinamamahalaan ni Mr. Leeds.
+&nbsp;</td>
+				</tr>
+				<tr>
+								<td class="style45" style="width: 1251px">
+								<strong><span class="style29"><br>
+																Kabanata 32 : Ang 
+								Bunga ng mga Paskil</span></strong></td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								Hindi na nagpaaral ng kanilang mga anak ang mga magulang dahil sa nangyari. Bihira ang pumasa at madami ang bumagsak sa eksamen at sa kanilang kurso. Ikinatuwa pa din ito ni Tadeo kahit bagsak siya at sinunog pa ang kanyang mga aklat. Hindi rin nakapasa sina Makaraig, Pecson, at Juanito Pelaez na napatali pa sa negosyo ng ama. Si Makaraig ay nagmadaling pumunta sa Europa. Tanging sina Isagani at Sandoval lamang ang pumasa. Nakabilanggo pa si Basilio at hindi pa nakakakuha
+								<span lang="EN-US" style="line-height: 115%; mso-fareast-font-family: &quot;MS Mincho&quot;; mso-fareast-theme-font: minor-fareast; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+								ni Don Timoteo Pelaez sa murang halaga.</span><p class="MsoNormal">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Mula noo’y madalas sa tindahan ng mga Pelaez si 
+								Simoun na usap-usapan na pinakisamahan na nito. 
+								Nabalitang ikakasal na si Juanito kay Paulita. 
+								Bagay umano ang dalawa dahil sila&#39;y mga walang 
+								isip at makasarili.<o:p></o:p></span></p>
+								<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Limot na ang mga pangamba pagdating ng Abril. 
+								Ang piging sa kasal nina Juanito at Paulita ay 
+								inaabangan ng buong bayan. Iniisip ng ilan na 
+								makipagkaibigan kay Simoun at Don Timoteo Pelaez 
+								para maimbita sa kasal. Ang Kapitan Heneral ay 
+								ninong sa nalalapit na kasal at inayos at 
+								pinaghandaan ni Simoun.<o:p></o:p></span></p>
+								</td>
+				</tr>
+				<tr>
+								<td>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="style29">
+								<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kabanata 33 : Ang 
+								Huling Matuwid</strong></span><br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<span class="style47"></span>
+								<span class="style21"><span class="style47">Inayos na ni Simoun ang kanyang mga hiyas at armas nang maaga. Araw na ng kanyang pag-alis at siya ay sasabay sa Kapitan Heneral. Ang karamihan ay naniniwala na hindi magpapaiwan si Simoun dahil maaaring maraming mga tao ang galit at maghiganti sa kanya o kaya naman ay pag-uusigin siya ng kahaliling Heneral.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kinahapunan ay nagkulong si Simoun sa kanyang silid at nagsabi na wala siyang ibang papapasukin kundi si Basilio lamang. Dumating si Basilio at nagulat si Simoun dahil sa laki ng ipinagbago ng binata.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Payat na payat na ito, humpak ang mga pisngi, magulo ang buhok, hindi maayos ang pananamit at wala na ang dating amo ng kanyang mga mata. Si Basilio ay tila isang patay na muling nabuhay.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sinabi ni Basilio kay Simoun na naging masama siyang anak dahil hindi niya ipinaghiganti ang pagkamatay ng kanyang ina at kapatid. Wala umano siyang napala sa kanyang pag-iwas kay Simoun at sa mga plano nito kundi ang makulong. Handa na raw siyang sumanib dito.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nagsalita si Simoun at sinabing nasa panig daw pala niyang talaga ang katwiran. Ang kanyang usapin ay siyang usapin ng mga sawimpalad na gaya ni Basilio.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tumayo si Basilio at sinabing matutuloy na ang himagsikan dahil siya ay hindi na nag-aalinlangan. Sinabi naman ni Simoun na ang nagtulak sa kanya upang ipagtuloy ang kanyang mga balak ay ang mga mabait na hindi makapagdesisyon ng maigi at ayaw ng gulo. Kung nagkatulungan na daw sana noon pa ang mga nasa mataas na lipunan at ang mga nasa ibaba, ang gawain sana ay mapagkawanggawa at hindi madugo at buktot.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ipinakita ni Simoun ang isang granada kay Basilio nang sila ay magpunta sa laboratoryo. Napag-usapan nila kung paano ito ginagamit at saan nila ito gagamitin. Sa kapistahan daw umano nila gagamitin ang tila ilawan ngunit isang granada na pipinsala sa mga bisita sa pista.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang plano ay magtatagpo sina Kabesang Tales at Simoun sa siyudad upang agawin ang mga armas na itinago ni Simoun sa tindahan ni Quiroga.
+								<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Si Basilio naman ang namumuno sa mga arabal at pag-aagaw ng mga tulay. Magkukuta siya roon upang sumaklolo kina Simoun. Ang lahat ng laban sa paghihimagsik ay kaniyang papatayin maging ang lahat ng lalaking tatangging sumama at humawak ng sandata.
+&nbsp;</span></span></td>
+				</tr>
+				<tr>
+								<td class="style45" style="width: 1251px">
+								<strong><span class="style29"><br>
+								Kabanata 35 : Ang Piging</span></strong>&nbsp;</td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:12.0pt;font-family:
+&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;">&nbsp; 
+								Dumating ang mga bisita sa tirahan ni Kapitan 
+								Tiyago ng ikapito ng gabi para sa isang 
+								salu-salo para sa ikinasal. Unang dumating ang 
+								maliliit na tao hanggang sa may malaking 
+								katayuan sa tungkulin at sa kabuhayan. Nauna ang 
+								mga taong hindi mataas ang tungkulin hanggang sa 
+								mga taong may malaking katayuan. Pinagpupugayan 
+								ni Don Timoteo ang lahat ng mga bisita.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang bagong kasal ay kasamang dumating ni Donya 
+								Victorina. Si Padre Salvi ay naroon na ngunit 
+								ang Heneral ay wala pa. Pupunta sana sa 
+								palikuran si Don Timoteo ngunit di siya makaalis 
+								dahil wala pa ang Heneral.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Mayroong pumuna sa mga kromo sa pader. Nagalit 
+								si Don Timoteo at sinabing iyon daw ay ang 
+								pinakamahal na mabibili sa Maynila. Sisingilin 
+								daw niya ang utang ng pumintas kinabukasan.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang Heneral ay dumating na. Ang mga dinaramdam 
+								ni Don Timoteo ay naglaho. Pinapanood ni Basilio 
+								ang mga nagdaratingan habang siya ay nasa harap 
+								ng bahay. Ang mga inakala niyang mga walang 
+								malay ay kanyang kinahabagan na mamamatay roon 
+								kaya naisip niyang bigyan sila ng babala. 
+								Subalit nangg makita niya sina Padre Salvi at 
+								Padre Irene, ang kanyang isip ay nagbago.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Nakita rin ni Basilio si Simoun na dala ang 
+								ilawan. Ang anyo ni Simoun ay kasindak-sindak na 
+								naliligid ng apoy at parang nag-aalinlangan din 
+								ito sa pagpanhik. Nang siya&#39;y magtuloy, sandali 
+								niyang kinausap ang Heneral at ang iba mga 
+								bisita. Saka siya nawala sa paningin ni Basilio.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang kapighatiang dinanas ng kanyang ina, kapatid, 
+								at ni Huli ay nawala sa isip ni Basilio. Ang 
+								kanyang kabutihang loob ay namayani at hinangad 
+								na iligtas ang mga nasa bahay ngunit siya’y 
+								pinigilan ng mga tanod dahil sa marusing niyang 
+								anyo.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Namutla si Simoun nang makita si Basilio na 
+								iniwan ng tanod-pinto upang magpugay sa kanya. 
+								Ang mukha niya’y tila nagsasabi na tumuloy sa 
+								sasakyan at nag-utos na, “Sa Eskolta. Matulin!”<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Lumayo nang matulin si Basilio ngunit may nakita 
+								siyang lalaki na nakatanaw sa bahay. Iyon ay si 
+								Isagani kaya niyaya niya itong lumayo. 
+								Ipinaliwanag niya ang tungkol sa ilawan saka 
+								hinila si Isagani.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ngunit mabilis na nagpasya ang binata ng 
+								makitang nagpupuntahan na sa kainan ang mga 
+								bisita. Pumasok sa kaniyang isip na kasamang 
+								sasabog sa bahay si Paulita.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sa loob ng bahay ay may nakita ang mga 
+								nagpipiging na &#39;di umano&#39;y isang kaputol na 
+								papel na ganito ang nakasulat.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span><i>
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;">
+								MANE THACEL PHARES<o:p></o:p></span></i></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span><i>
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;">
+								JUAN CRISOSTOMO IBARRA<o:p></o:p></span></i></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ayon kay Don Custodio iyon ay isa lamang biro 
+								dahil matagal nang pumanaw si Crisostomo Ibarra. 
+								Ngunit ng Makita ni Padre Salvi ang papel at ang 
+								nakasulat doon ay namutla ito. Iyon ay lagda ni 
+								Ibarra kaya napahilig siya sa sandigan ng silya 
+								at nanlambot sa takot.</span><i><o:p></o:p></i></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ipapatawag sana ng Kapitan Heneral ang mga kawal 
+								subalit ni isa&#39;y wala siyang nakita kung kaya&#39;t 
+								hinayaan na lamang niya na magpatuloy sa pagkain 
+								ang mga bisita at huwag nang intindihin ang 
+								biro. Nagpanggap ang Heneral na hindi natatakot 
+								kahit pa ang lahat ng nasa loob ng bahay ay 
+								takot na takot sa nasaksihan.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ilang sandali lamang ay nagsalita si Don 
+								Custodio. Sa tingin daw niya’y ang kahulugan ng 
+								sulat ay papatayin silang lahat noong gabing 
+								iyon.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Hindi sila lahat nakakibo. May nagsabi na baka 
+								sila ay lasunin kung kaya&#39;t binitawan ang mga 
+								hawak na kubyertos. Ang ilaw naman ay lumabo.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sinabi ng Kapitan Heneral kay Padre Irene na 
+								itaas nito ang mitsa ng ilawan. Bigla namang may 
+								mabilis na pumasok, tinabig ang utusang 
+								humadlang dito, saka kinuha ang ilawan, itinakbo 
+								sa asotea, at itinapon sa ilog. May nagsabing 
+								magnanakaw daw iyon at may nanghingi pa ng 
+								rebolber.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="mso-fareast-font-family: &quot;Times New Roman&quot;" class="style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang anino naman na kumuha sa ilawan ay tumalon 
+								rin sa ilog.<o:p></o:p></span></p>
+								</td>
+				</tr>
+				<tr>
+								<td class="style45" style="width: 1251px">
+								<strong><span class="style29"><br>
+								Kabanata 39 : Katapusang Kabanata</span></strong>&nbsp;</td>
+				</tr>
+				<tr>
+								<td class="style33" style="width: 1251px">
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Tumugtog si Padre Florentino ng kanyang armonyum 
+								ng malungkot. Sa pag-aakalang siya ang Kastilang 
+								sinasabi sa telegrama na huhulihin daw sa gabing 
+								iyon, si Don Tiburcio ay umalis. Akala niya’y 
+								nahanap na siya ni Donya Victorina na kanyang 
+								asawa.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Isang telegrama ang ibinigay ng tenyente ng 
+								guwardiya sibil kay Padre Florentino.<span style="mso-spacerun:yes">&nbsp;
+								</span>“Espanyol escondido casa Padre Florentino 
+								cojera remitara vivo muerte” ang sabi sa 
+								telegrama.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Si Simoun ang totoong tinutukoy sa telegrama. 
+								Dalawang araw ang nakararaan nang sugatang 
+								dumating sa bayan nina Padre Florentino si 
+								Simoun. Di siya inusisa ng pari. Inosente ang 
+								pari tungkol sa mga kaganapan noong gabi ng 
+								piging sa Maynila.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang hinuha ng pari ay sugatan si Simoun sapagkat 
+								may naghiganti dito sa kadahilanang wala na ang 
+								Kapitan Heneral. Ngunit paliwanag ni Simoun ay 
+								siya ay nagkasugat dahil sa kawalan ng 
+								pag-iingat.<span class="style37"><o:p></o:p></span></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Naghinala ang pari nang matanggap ang telegrama 
+								na si Simoun ay tumakas sa mga kawal na 
+								tumutugis sa kanya sa Maynila.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ayaw magpagamot ni Simoun sa ospital ngunit 
+								pumayag na mag-paalaga kay Dr. De Espadaña. 
+								Malubha ang sugat ni Simoun.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								I</span><span lang="EN-US" style="line-height: 115%;" class="style46">tinigil 
+								ni Padre Florentino ang pagtugtog at<span style="mso-spacerun:yes">&nbsp;
+								</span>nagmuni sa ibigsabihin ng pakutyang ngiti 
+								ni Simoun nang malaman nito ang tungkol sa 
+								telegrama at sa ikawalo ng gabi ang dating mga 
+								darakip. Para sa pari ay taong palalo daw si 
+								Simoun na dati’y makapangyarihan ngunit ngayon 
+								ay kahabag-habag.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Inisip din niya kung bakit sa kanya na isang 
+								paring Pilipino ginusto ni Simoun na magtago 
+								samantalang dati’y napakababa ng tingin sa kanya 
+								nito.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								‘Di kasi pinansin noon ni Simoun ang pakiusap ng 
+								pari na tulungang makaalis si Isagani sa 
+								kulungan dalawang buwan na ang nakalipas. 
+								Ikinalungkot din ni Isagani ang pag-aga ng kasal 
+								ni Paulita at Juanito sa tulong ni Simoun. 
+								Subalit sa kabila ng lahat ng ito maging ang 
+								pagtulong ni Padre Florentino kay Simoun ay tila 
+								ba walang nais mailigtas ni Simoun ang sarili.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Pumasok ang pari sa kwarto ni Simoun at tila 
+								wala na ang mapangutyang mukha nito. Si Simoun 
+								pala ay uminom ng lason at tinitiis ang sakit na 
+								dulot nito sa kanya.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ihahanap sana ng pari ng lunas si Simoun ngunit 
+								tumanggi na ito. Nagdasal ang pari at buong 
+								kabanalang inilapit ang isang silyon sa maysakit 
+								at nakinig.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Dito na nagtapat si Simoun tungkol sa kaniyang 
+								katauhan. Nasindak ang pari. Malungkot na 
+								ngumiti ang maysakit. Tinakpan ng pari ang mukha 
+								at nakinig. Inihayag ni Simoun ang kanyang buhay.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Labintatlong taon siya sa Europa upang mag-aral 
+								saka umuwi sa Pilipinas na puno ng pangarap at 
+								pag-asa. Napatawad na niya ang mga nagkasala sa 
+								kanyang ama at pinili na mabuhay ng tahimik at 
+								mapayapa. Ngunit isang kaguluhan ang dumating sa 
+								kanya at sa isang iglap ay nawala sa kanya lahat. 
+								Naligtas lamang siya sa kamatayan sa tulong ng 
+								isang kaibigan.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ninais daw niyang maghiganti. Lumabas siya ng 
+								bansa dala ang bahagi ng yaman ng kanyang 
+								magulang at siya’y nangalakal.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sumali daw siya sa himagsikan sa Kuba. Doon niya 
+								nakilala ang Kapitan Heneral na noon ay 
+								Kumandante pa lamang. Pinautang ito at naging 
+								matalik na kaibigan dahil sa kawalang hiyaan ng 
+								kapitan na siya lang ang may alam.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sa tulong ng salapi ay nakuha niyang maging 
+								kaibigan ang Kapitan Heneral at naging 
+								sunud-sunuran pa dito.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Marami pang pagtatapat si Simoun na inabot na ng 
+								gabi nang matapos. Saglit na tumahimik at 
+								inihingi ng tawad ng pari ang mga pagkukulang ni 
+								Simoun. Hiniling ng pari na igalang ni Simoun 
+								ang kalooban ng Diyos.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Napatanong si Simoun sa Diyos kung bakit siya ay 
+								hindi tinulungan sa kanyang layunin. Sinabi ng 
+								pari na ang kanyang paraan ay masama at saka 
+								nagpaliwanag.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Ang mga sinabi ng pari ay kanyang tinanggap. 
+								Inamin ni Simoun na siya&#39;y nagkamali. Naitanong 
+								niya na dahil ba sa kanyang pagkakamali ay hindi 
+								ibibigay ng Diyos ang kalayaan ng isang bayan at 
+								ililigtas ang mga taong may higit pang salarin 
+								kaysa kanya?<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sumagot ang pari, sinabi niya na ang matatapat 
+								at mababait at dapat upang ang kanilang adhikain 
+								ay makilala. Ang kanilang dapat gawin ay ang 
+								magtiis at gumawa<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Si Simoun ay napailing. Sinabi niya na ang 
+								pagtitiis at paggawa ay madaling banggitin sa 
+								mga taong hindi pa iyon nararanasan. Natanong 
+								din ni Simoun na anong klaseng Diyos ang humingi 
+								ng malaking pagpapasakit.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Sinabi ng pari na ito ang isang Diyos na 
+								makatarungan at nagbibigay ng parusa sa mga 
+								taong kulang ang pananalig at gumagawa ng masama.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								“Pinabayaan natin ang kasamaan kaya’t katulong 
+								tayo sa paglikha nito. Ang kalayaan ay di natin 
+								dapat tuklasin sa tulong ng patalim. Tuklasin 
+								natin ito sa tulong ng nagpapataas ng uri ng 
+								katwiran at karangalan ng tao. Gumawa tayo ng 
+								mabuti, tapat at marangal hanggang mamatay tayo 
+								dahil sa kalayaan.”<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Pinisil ni Simoun ang kamay ng pari. Ang 
+								katahimikan ay namayani. Dinagdagan pa ng 
+								dalawang pisil. Si Simoun ay nagbuntong hininga 
+								at labis na katahimikan ang naghari.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								Napabulong na lamang ang pari ng,<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="font-size: 12.0pt; line-height: 115%;">
+								“</span><span lang="EN-US" style="line-height: 115%;" class="style5">Nasaan 
+								ang kabataang naglalaan ng magagandang sandali, 
+								ng kanilang mga pangarap at kasiglahan 
+								alang-alang sa ikabubuti ng kanilang bayan? Saan 
+								naroon ang handang magpakamatay upang hugasan ng 
+								dugo ang napakaraming pagkakasala? Upang 
+								karapatdapat ang pagpapakasakit ito’y kailangang 
+								malinis at busilak. Nasaan ang kabataang may 
+								lakas na tumanan na sa aming mga ugat, ng 
+								kalinisan ng diwa na narumihan na sa amin, ng 
+								apoy ng sigla na patay na sa aming puso? O 
+								kabataan, kayo’y aming hinihintay!”<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Napaluha si Padre Florentino at binitawan ang 
+								kamay ni Simoun. Isang utusan ang kumatok at 
+								nagtanong kung magsisindi ng ilaw. Hinipo ng 
+								pari si Simoun at dahil sa liwanag ng binibigay 
+								ng lampara ay naisip niyang patay na si Simoun. 
+								Ang pari ay lumuhod at nanalangin.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								Tinawag ni Padre Florentino ang mga utusan, 
+								pinaluhod at pinagdasal. Umalis si Padre 
+								Florentino ng silid at kinuha ang takbang bakal 
+								ni Simoun. Ito&#39;y kanyang dinala sa talampas na 
+								laging inuupuan ni Isagani upang tanawin ang 
+								lalim ng dagat.<o:p></o:p></span></p>
+								<p class="MsoNormal">
+								<span lang="EN-US" style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp; </span>
+								<span lang="EN-US" style="line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span lang="EN-US" style="line-height: 115%;" class="style46">
+								<span class="style47">Lumipas ang ilang sandali, 
+								&#39;di umano&#39;y hinagis ni Padre Florentino ang mga 
+								takba ng brilyante at alahas ni Simoun sa dagat.</span><o:p></o:p></span></p>
+								</td>
+				</tr>
+</table>
+
+
+
+
+
+<span class="style21">
+</span>
+
+
+
+
+
+<p class="style16" style="position: relative; left: -10px; top: 759px; width: 1331px;">
+<strong>TALAKAYAN</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+<span class="style23"><span class="style26">
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+</p>
+</table>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</strong>
+
+</span></span></span></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<p class="style49" style="position: absolute; left: 416px; top: 13271px; width: 561px; height: 36px;">
+<span class="style50">MGA KASANAYAN</span></p>
+
+
+
+<span class="style21">
+
+
+
+ <p class="style16" style="position: relative; left: 29px; top: 6887px; width: 1331px; height: 2046px;">
+<strong><br>
+<br>
+<img id="gawain2" alt="" src="3.8.8 Mga Gawain.png" width="1000" height="1583" class="style51"></strong></p>
+
+
+</span><span class="style26"><br>
+</span>
+
+
+
+<p id= class="style52" style="position: absolute; left: 487px; top: 15011px; width: 603px; height:139px;" class="style54">
+<span class="style53">MAHALAGANG KAGANAPAN</span><span class="style21"><span class="style23"><br> 
+
+<br>
+
+<p id= class="style52" style="position: absolute; left: 175px; top: 15072px; width: 1121px; height:139px;" class="style54">
+<span class="style2"><span class="style5">Kabanata 1 <br>
+ <br></span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21">
+<span class="style57">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+&nbsp; </strong>
+</span></span></strong></strong>
+
+
+
+
+
+
+
+<span class="style21">
+<span class="style57">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="style2"><span class="style5">•	Isang umaga ng Disyembre, naglalayag sa ilog Pasig ang Bapor Tabo patungong Laguna. Makikita sa ibabaw ng kubyerta sina Don Custodio, Ben Zayb, Donya Victorina, Kapitan Heneral, Padre Irene, Padre Salvi, at Simoun.
+<br>
+<br>
+<strong>Kabanata 2</strong> <br>
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></strong><span class="style2"><span class="style5">•	Sa ilalim ng kubyerta nakita ni Simoun si Basilio na mag-aaral ng medisina at si Isagani na makata at dito nagkaroon sila ng ilang pagtatalo patungkol sa kanilang mga pinaniniwalaan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 3
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></strong></strong></strong><span class="style23">
+<span class="style53">&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Nagbanggit ng mga alamat ang kapitan patungkol sa mga lugar na kanilang nadadaanan. At nang makapunta ang bapor sa lawa ay tinanong ni Ben Zayb kung doon daw ba namatay si Ibarra at nang malamang doon nga ay hinamak niya ito na iyon daw ang pinakamurang libing na ikinamutla ni Simoun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 7
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></strong></span></strong></strong></strong></strong><span class="style21"><span class="style23"><span class="style53">
+</span></span></span><span class="style2"><span class="style5">• Nakita ni Basilio na may paparating kaya siya ay nagtago sa isang puno. Nakita niya na si Simoun ito na naghuhukay kaya't siya ay lumabas at lumapit para tumulong. 
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Tinutukan siya ng baril ni Simoun at tinanong kung siya ay nakikilala nito at kilala nga ni Basilio ang totoong katauhan ni Ibarra. 
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Papatayin na sana ni Simoun ang binata ngunit dahil sa halos pareho sila ng sinapit ay hindi niya itinuloy.
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Nagkaroon sila ng pagtatalo patungkol sa paghihiganti dahil tila hindi nais ni Basilio na maghiganti dahil hindi nito maibabalik ang kabyang ina at kapatid, at sa kanilang pagtatalo lalong lumakas ang loob ni Simoun sa kanyang paghihiganting binabalak.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 10
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></strong></strong></strong></strong></strong><span class="style2"><span class="style5">• Nanuluyan si Simoun sa bahay ni Kabesang Tales na noo'y naghihirap samantalang si Simoun ay maginhawa kasama ang kanyang mga alahas at rebolber.
+</span>
+</span>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">•	Si Simoun ay nagbebenta ng alahas sa mga tao roon at siya ay nagsabi na siya daw ay namimili rin ng alahas.
+</span>
+</span>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Inilabas ni Kabesang Tales ang kwintas na namukhaan ni Simoun na dating pagmamay ari ng dating kasintahan na si Maria Clara na nagmongha na, kaya't tinawaran niya agad ito ng 500, ngunit hindi agad ito ipinagbili ni Kabesang Tales dahil ikokonsulta muna ito kay Huli na kanyang anak na naghirap para sa kwintas na iyon na sinang-ayunan ni Simoun.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Kinaumagahan nawala si Kabesang Tales at ang rebolber ni Simoun, ngunit may iniwan ito na sulat at ang kwintas ni Maria Clara, na nagsasabing paumanhin sa pagkuha niya ng rebolber dahil si Kabesang Tales ay sasali sa tulisan.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">•	Ikinatuwa ito ni Simoun dahil nakatagpo siya ng hinahanap niyang tao, mapusok ngunit marunong tumupad sa pangako.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 11
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></strong></strong></strong></strong></strong>
+<span class="style2"><span class="style5">• Naglalaro sina Simoun ng baraha at siya ay nagbigay ng mga kakaibang kundisyon sa kanyang kalaban para sa pusta.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Ipinagbawal ng Heneral ang mga armas de salon subalit, sinabi ni Simoun na huwag itong ipagbawal sa halip ay magkaroon na lamang ng iisang sukat na kasalukuyang nabibili noon.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Tumutol din si Simoun sa pagpapatayo ng Akademya dahil sa ito'y kahina-hinala.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 16
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></span></strong><span class="style21"><span class="style23">
+<span class="style53">&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Sinisingil ni Simoun ang isang intsik na nagngangalang Quiroga sa kanyang utang na siyam na libong piso. 
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Inalok ni Simoun si Quiroga na babawasan niya ng dalawang libong piso ang kanyang utang kung papayag si Quiroga na itago ang mga armas sa kanilang bahay at napilitang sumang-ayon si Quiroga.
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+Kabanata 32
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></span></strong></strong></strong></strong><span class="style21"><span class="style23">
+<span class="style53">&nbsp;</span></span></span><span class="style2"><span class="style5">• Ang nalalapit na kasal nina Paulina at Juanito ay inaayos at pinaghahandaan ni Simoun.
+<strong><br>
+<br>
+<br>
+Kabanata 33
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></span></strong></strong></strong></strong><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Nagulat si Simoun sa itsura ni Basilio dahil sa malaki nitong pagbabago.
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></strong><span class="style2"><span class="style5">• Ipinakita ni Simoun kay Basilio ang isang granada na kanilang gagamitin sa isang pistahan na papatay sa maraming bisita.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 35
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></span></strong></strong></strong></strong><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Pumunta si Simoun sa bahay ni Kapitan Tiyago at siya'y nakipag-usap sa mga bisita.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Nagulat si Simoun nang makita niya si Basilio na iniwan ang tanod-pinto upang magbigay pugay sa kanya.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Ang mga nagpipiging ay may nakitang isang piraso ng papel na may nakasulat na: 
+Mane Thacel Phares
+
+Juan Crisostomo Ibarra
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Marami ang natakot dahil sa isang pirasong papel na ito dahil alam nilang matagal nang patay si Ibarra.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+Kabanata 39
+<br>
+<br>
+</strong>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></strong></span></strong></strong></strong></strong><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Sinasabi sa telegrama na huhulihin ng mga guwardiya sibil si Simoun.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Lumipas ang dalawang araw, dumating si Simoun sa bahay ni Padre Florentino nang sugatan. Sinabi ni Simoun na siya ay sugatan dahil sa kawalan ng pag-iingat.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">• Hinala ng pari na kaya sugatan si Simoun ay dahil tumakas siya sa mga guwardiya sibil.
+<br>
+<br>
+</span>
+</span><span class="style21"><span class="style23">
+<span class="style53">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class="style2"><span class="style5">•	Hindi pumayag si Simoun na magpadala sa ospital subalit sumang-ayon na magpa-alaga kay Don Tiburcio.<br>
+</span>&nbsp;<span class="style5"><br>
+</span>
+</span>
+
+
+
+
+
+
+
+<span class="style21">
+<span class="style57">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style58">
+</span></span><span class="style2"><span class="style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Inilahad ni Simoun ang kanyang buong pagkatao sa pari. Ikinuwento niya ang lahat ng pangyayari simula noong pumunta siya ng Europa at namalagi ng labintatlong taon hanggang sa kasalukuyan.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Napapatanong si Simoun kay Padre Florentino kung bakit hindi siya tinutulungan ng Diyos sa kanyang mga hangarin at sinagot siya ng pari na hindi kalooban ng Diyos ang kanyang mga ginagawa.
+<br>
+<br>
+</span>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="style21">
+<span class="style58">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="style33"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Pinisil ni Simoun ang kamay ng pari. Ang katahimikan ay namayani. Dinagdagan pa ng dalawang pisil. Si Simoun ay nagbuntong hininga at labis na katahimikan ang naghari. Nang masindihan ang lampara, nalaman ng pari na si Simoun ay namayapa na.
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong>
+
+
+
+
+
+
+
+<span class="style21"><span class="style23"><br> 
+
+
+
+ <p class="style16" style="position: relative; left: 20px; top: 9050px; width : 1331px; height: 2046px;">
+<strong><br>
+<br>
+<img alt="" src="3.8.7 Panapos na Pagtataya.png" width="1000" height="2000"></strong></p>
+
+
+
+</p>
+
+
+
+<!***ANSWER KEYSS****!>
+<a class="trigger_popup_fricc">
+<p class="style22" style="position: fixed; left: 1275px; top: 473px; width: 53px; height: 49px;">
+
+<img id="susi" src="Susi.png" width="47" height="49"></p>
+</a>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+     <img src="3.8.9 Answer Keys.jpg" width="400" height="315">
+</div>
+
+
+
+
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollup").style.display = "block";
+    } else {
+        document.getElementById("scrollup").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<script>
+/*Scroll down hide*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+document.getElementById("hidenavbar").style.top = "0";
+} else {
+document.getElementById("hidenavbar").style.top = "-100px";
+}
+}
+</script>
+                                                          
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<SCRIPT LANGUAGE="JavaScript" SRC="script.js"></SCRIPT>
+
+<script>
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+
+
+
+</script>
+
+
+</html>
+
+
+

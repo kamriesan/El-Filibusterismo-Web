@@ -1,0 +1,970 @@
+﻿<html>
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="3.7 Si Padre Florentino.css">
+<title>El Filibusterismo | Si Padre Florentino</title>
+<link rel="icon" href="Quill Pen Icon.png">
+
+<style>
+
+ /*==========Global==========*/
+/*==========Basics==========*/
+html {
+scroll-behavior: smooth;
+}
+body {
+background-color: #832e2e;
+}
+
+
+/*==========Sections==========*/
+
+.header {
+text-align: center;
+position: relative;
+z-index: 1;
+				background-image: linear-gradient(to bottom, lighten(@header-background, 15%) 0%, @header-background 100%);
+}
+.header .master-head {
+padding: 7% 30px;
+background-color: #832e2e;
+}
+.header .page-title {
+padding: 0 30px 0 30px;
+font-size: 22px;
+color: #FFF;
+
+}
+.header .page-description {
+margin-top: 400px;
+max-width: 1000px;
+font-size: 28px;
+color: #FFF;
+}
+.header .scroll-button {
+color: #FFF;
+font-size: 20px;
+padding: 15px 20px 15px 20px;
+display: inline-block;
+background: #cdad2d;
+cursor: pointer;
+transition-duration: 0.4s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.header .scroll-button:hover {
+background: #F7CA18;}
+.header .scroll-button:active {
+background: #194c53;
+}
+.main-content {
+margin: 0px auto;
+position: relative;
+}
+.main-content .section-inner,
+.main-content .post-wrapper {
+*zoom: 1;
+}
+.main-content .section-inner:before,
+.main-content .post-wrapper:before,
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+content: "";
+display: table;
+}
+.main-content .section-inner:after,
+.main-content .post-wrapper:after {
+clear: both;
+}
+.section .section-inner {
+margin: 0px auto;
+width: 1024px;
+}
+@media only screen {
+.section .section-inner {
+width: auto;
+max-width: 1024px;
+}
+}
+/*==========Stem==========*/
+.stem-wrapper {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 50%;
+}
+.stem-wrapper.color-yellow .stem-background {
+background: #cdad2d;
+}
+.stem-wrapper.color-green .stem-background {
+background: #35C189;
+}
+.stem-wrapper.color-white .stem-background {
+background: #FFF;
+}
+.stem-wrapper .stem,
+.stem-wrapper .stem-background {
+position: absolute;
+top: 0px;
+left: -30px;
+width: 60px;
+}
+.stem-wrapper .stem {
+background: none;
+height: 100%;
+}
+.stem-wrapper .stem-background {
+background: #cdad2d;
+height: 50%;
+transition-duration: 5s;
+}
+.stem-padding,
+.single-stem-icon {
+width: 60px;
+height: 0px;
+margin: 0px auto;
+background: none;
+}
+.single-stem-icon.scroll-to-top {
+cursor: pointer;
+background-image: url('file:///E:/ICT%20x%20Fil/Transferrrrrrrrr/2%20Paglalathala/2%20Paglathala/Scrolltop.png');
+}
+/*==========Post wrapper ==========*/
+.post-wrapper {
+*zoom: 1;
+}
+.post-wrapper:before,
+.post-wrapper:after {
+content: "";
+display: table;
+}
+.post-wrapper:after {
+clear: both;
+}
+.post-wrapper .post {
+position: relative;
+width: 432px;
+padding: 0px 0px 60px 0px;
+clear: both;
+opacity: 1;
+-webkit-perspective: 1000px;
+perspective: 1000px;
+}
+.post-wrapper .post.hidden .post-content {
+-webkit-transform: translateY(100px) rotateX(30deg);
+transform: translateY(100px) rotateX(30deg);
+opacity: 0;
+}
+.post-wrapper .post:hover .post-content,
+.post-wrapper .post.active .post-content {
+opacity: 1;
+}
+.post-wrapper .post:hover .post-content .meta,
+.post-wrapper .post.active .post-content .meta {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post:nth-child(even) {
+float: right;
+}
+.post-wrapper .post:nth-child(odd) {
+float: left;
+}
+.post-wrapper .post:nth-child(even) .stem-overlay {
+left: -110px;
+}
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+right: -110px;
+}
+.post-wrapper .post.Scroll-Calendar .stem-overlay .icon {
+background-image: url('Scroll-Calendar.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Scroll-Quillink .stem-overlay .icon {
+background-image: url('Scroll-Quillink.png');
+cursor: url("Cursor.png"), pointer;
+
+}
+.post-wrapper .post.Scroll-Quill .stem-overlay .icon {
+background-image: url('Scroll-Quill.png');
+cursor: url("Cursor.png"), pointer;
+
+
+}
+.post-wrapper .post .stem-overlay {
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 60px;
+}
+.post-wrapper .post .stem-overlay .icon {
+background: transparent no-repeat center center;
+height: 60px;
+width: 60px;
+cursor: pointer;
+}
+.post-wrapper .post .stem-overlay .stem-mask {
+position: absolute;
+top: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: url('stem-mask.png') repeat-y center top;
+}
+.post-wrapper .post .post-content {
+opacity: 0.3;
+transition-duration: 0.4s;
+-webkit-transform: none;
+transform: none;
+}
+.post-wrapper .post .post-content .meta {
+color: rgba(255, 255, 255, 0.3);
+margin: 0px 0px 15px 0px;
+letter-spacing: 0px;
+opacity: 0;
+transition-duration: 1s;
+transition-delay: 0.2s;
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+}
+.post-wrapper .post .post-content .post-title {
+font-size: 32px;
+line-height: 60px;
+margin: 0px 0px 15px 0px;
+}
+/*==========Media queries==========*/
+@media only screen and (max-width: 1080px) {
+.main-content,
+.main-content .section-inner {
+max-width: none;
+}
+.stem-wrapper {
+left: 80px;
+}
+.stem-padding,
+.single-stem-icon {
+margin: 0px;
+float: left;
+margin-left: 50px;
+}
+.post-wrapper .post,
+.post-wrapper .post:nth-child(even),
+.post-wrapper .post:nth-child(odd) {
+width: auto;
+margin-left: 110px;
+float: none;
+}
+.post-wrapper .post .stem-overlay,
+.post-wrapper .post:nth-child(even) .stem-overlay,
+.post-wrapper .post:nth-child(odd) .stem-overlay {
+left: -60px;
+right: auto;
+}
+.post-wrapper .post .post-content {
+padding: 0px 50px;
+}
+}
+@media only screen and (max-width: 700px) {
+.header .page-title {
+font-size: 40px;
+}
+.post-wrapper .post {
+margin-left: 90px !important;
+}
+.post-wrapper .post .post-content {
+padding: 0 25px;
+}
+.stem-wrapper {
+left: 60px;
+}
+.stem-padding,
+.single-stem-icon {
+margin-left: 30px;
+}
+}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+VIEW LESS CODE VIEW RESOURCES 1×
+0.5×
+0.25×
+ RERUN
+.style1 {
+				color: #fff;
+}
+.style1 {
+				font-size: large;
+				margin-top: 10px;
+}
+.style2 {
+				font-size: large;
+				color: #fff;
+}
+
+
+
+
+/*****************************************Shining Text1*****************************************/
+.mask a{
+position: relative;
+display:block;
+width:621px;
+overflow: under;
+height: 176px;
+text-align:center;
+margin: 50px auto;
+background: ;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+}
+.mask a{
+background-position: -700px 0;
+position: relative;
+cursor: url("CursorPointer.png"), pointer;
+
+}
+.mask a:hover,
+.mask a:focus{
+background-position: 100px 0;
+/*change speed to see in slow motion*/
+transition: all 2s;
+cursor: url("CursorPointer.png"), pointer;
+}
+.mask a::after{
+content:'';
+position: absolute;
+pointer-events: none;
+top:0; left:0; right:0; bottom: 0;
+background: radial-gradient(0 0,circle farthest-side, rgba(255,255,0,0.3) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+background-position: inherit;
+-webkit-mask: url("3.7.1 Title.png");
+cursor: url("CursorPointer.png"), pointer;
+
+}
+
+/*****************************************Shining Text1*****************************************/
+
+.style5 {
+				font-family: "Times New Roman", Times, serif;
+}
+.next {
+background-color: #fff;
+color: black;
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+		
+.next:hover {
+background-color: grey;
+transition: .5s;
+-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+
+}
+
+a {
+text-decoration: none;
+}
+.style7 {
+				font-size: x-large;
+				font-family: "Times New Roman", Times, serif;
+				color: #FFCC00;
+}
+
+.style9 {
+	color: white;
+}
+.style13 {
+				margin-left: 40px;
+}
+.style14 {
+				margin-left: 80px;
+				margin-top: 0px;
+}
+.style15 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFFFFF;
+}
+.style16 {
+				margin-left: 40px;
+				text-align: center;
+				font-size: xx-large;
+				color: #FFFFFF;
+				font-family: "Times New Roman", Times, serif;
+				margin-top: 0px;
+}
+.style17 {
+				margin-top: 1px;
+}
+.style18 {
+				font-size: x-large;
+				font-family: "Century Gothic";
+				color: #FFCC00;
+}
+.style19 {
+				font-size: large;
+				font-family: "Century Gothic";
+}
+.style21 {
+				font-size: large;
+				font-family: "Century Gothic";
+				color: #FFFFFF;
+}
+.style22 {
+				color: #F7CA18;
+}
+</style>
+</head>
+
+
+
+
+
+<!****Nav Bar****!>
+<p></p>
+<div id="hidenavbar" style="z-index: 8"> <Center>
+
+	
+<ul><font face="Times New Roman">
+
+<li><div class="dropdown"><a href="2 Paglathala.html">Paglathala</a>
+
+
+<li><div class="dropdown"><a href="3 Mga Aralin.html">Mga &nbsp;Aralin</a>
+
+<div class="dropdown-content"> 
+<a href="3.2 Kaligirang Pangkasaysayan.html">Aralin 1</a>
+<a href="3.3 Si Basilio.html">Aralin 2</a>
+<a href="3.4 Si Kabesang Tales.html">Aralin 3</a>
+<a href="3.5 Si Juli.html">Aralin 4</a>
+<a href="3.6 Si Isagani.html">Aralin 5</a>
+<a href="3.7 Si Padre Florentino.html">Aralin 6</a>
+<a href="3.8 Si Simoun.html">Aralin 7</a>
+
+</div> 
+
+</li>
+<a href="0../index.html">
+				<img alt=Icon src="NavIcon.png" width="200" height=60></a>
+<li><div class="dropdown"><a href="4 Mga Tauhan.html">Mga Tauhan</a>
+
+<div class="dropdown-content"> 
+
+<a href="4 Mga Tauhan.html#Simoun">Simoun</a>
+<a href="4 Mga Tauhan.html#Basilio">Basilio</a>
+<a href="4 Mga Tauhan.html#Isagani">Isagani</a>
+<a href="4 Mga Tauhan.html#Macaraig">Macaraig</a>
+<a href="4 Mga Tauhan.html#Kabesang Tales">Kabesang Tales</a>
+<a href="4 Mga Tauhan.html#Padre Florentino">Padre Florentino</a>
+<a href="4 Mga Tauhan.html#Don Custodio">Don Custodio</a> 
+<a href="4 Mga Tauhan.html#Jograt">Jograt</a>
+<a href="4 Mga Tauhan.html#Paulita Gomez">Paulita Gomez</a>
+<a href="4 Mga Tauhan.html#Juli">Juli</a>
+<a href="4 Mga Tauhan.html#Juanito Pelaez">Juanito Palaez</a>
+<a href="4 Mga Tauhan.html#Donya Victorina">Donya Victorina</a>
+<a href="4 Mga Tauhan.html#Padre Camorra">Padre Camorra</a>
+<a href="4 Mga Tauhan.html#Ben-Zayb">Ben-Zayb</a> 
+<a href="4 Mga Tauhan.html#Placido Penitente">Placido Penitente</a>
+<a href="4 Mga Tauhan.html#Tiburcio de Espadana">Tiburcio de Espadaña</a>
+<a href="4 Mga Tauhan.html#Hermana Penchang">Hermana Penchang</a>
+<a href="4 Mga Tauhan.html#Padre Irene">Padre Irene</a>
+<a href="4 Mga Tauhan.html#Quiroga">Quiroga</a>
+<a href="4 Mga Tauhan.html#Don Timoteo Palaez">Don Timoteo Palaez/a>
+<a href="4 Mga Tauhan.html#Tandang Selo">Tandang Selo</a> 
+<a href="4 Mga Tauhan.html#Padre Fernandez">Padre Fernandez</a>
+<a href="4 Mga Tauhan.html#Sandoval">Sandoval</a>
+<a href="4 Mga Tauhan.html#Hermana Bali">Hermana Bali</a>
+<a href="4 Mga Tauhan.html#Padre Millon">Padre Millon</a>
+<a href="4 Mga Tauhan.html#Tadeo">Tadeo</a>
+<a href="4 Mga Tauhan.html#Leeds">Leeds</a>
+<a href="4 Mga Tauhan.html#Tano">Tano</a> 
+<a href="4 Mga Tauhan.html#Pepay">Pepay</a>
+<a href="4 Mga Tauhan.html#Gobernador Heneral">Gobernador Heneral</a>
+<a href="4 Mga Tauhan.html#Padre Hernando De la Sibyla">Padre Hernando De la Sibyla</a>
+<a href="4 Mga Tauhan.html#Pecson">Pecson</a>
+<a href="4 Mga Tauhan.html#Padre Bernardo Salvi">Padre Bernardo Salvi</a>
+<a href="4 Mga Tauhan.html#Kapitan Tiyago">Kapitan Tiyago</a>
+
+
+</div> 
+
+</li><li><div class="dropdown"><a href="5 Mga Kabanata.html">Saliksikin</a>
+
+<div class="dropdown-content"> 
+<a href="5 Mga Kabanata.html#1">Kabanata 1</a>
+<a href="5 Mga Kabanata.html#2">Kabanata 2</a>
+<a href="5 Mga Kabanata.html#3">Kabanata 3</a>
+<a href="5 Mga Kabanata.html#4">Kabanata 4</a>
+<a href="5 Mga Kabanata.html#5">Kabanata 5</a>
+<a href="5 Mga Kabanata.html#6">Kabanata 6</a>
+<a href="5 Mga Kabanata.html#7">Kabanata 7</a>
+<a href="5 Mga Kabanata.html#8">Kabanata 8</a>
+<a href="5 Mga Kabanata.html#9">Kabanata 9</a>
+<a href="5 Mga Kabanata.html#10">Kabanata 10</a>
+<a href="5 Mga Kabanata.html#11">Kabanata 11</a>
+<a href="5 Mga Kabanata.html#12">Kabanata 12</a>
+<a href="5 Mga Kabanata.html#13">Kabanata 13</a>
+<a href="5 Mga Kabanata.html#14">Kabanata 14</a>
+<a href="5 Mga Kabanata.html#15">Kabanata 15</a>
+<a href="5 Mga Kabanata.html#16">Kabanata 16</a>
+<a href="5 Mga Kabanata.html#17">Kabanata 17</a>
+<a href="5 Mga Kabanata.html#18">Kabanata 18</a>
+<a href="5 Mga Kabanata.html#19">Kabanata 19</a>
+<a href="5 Mga Kabanata.html#20">Kabanata 20</a>
+<a href="5 Mga Kabanata.html#21">Kabanata 21</a>
+<a href="5 Mga Kabanata.html#22">Kabanata 22</a>
+<a href="5 Mga Kabanata.html#23">Kabanata 23</a>
+<a href="5 Mga Kabanata.html#24">Kabanata 24</a>
+<a href="5 Mga Kabanata.html#25">Kabanata 25</a>
+<a href="5 Mga Kabanata.html#26">Kabanata 26</a>
+<a href="5 Mga Kabanata.html#27">Kabanata 27</a>
+<a href="5 Mga Kabanata.html#28">Kabanata 28</a>
+<a href="5 Mga Kabanata.html#29">Kabanata 29</a>
+<a href="5 Mga Kabanata.html#30">Kabanata 30</a>
+<a href="5 Mga Kabanata.html#31">Kabanata 31</a>
+<a href="5 Mga Kabanata.html#32">Kabanata 32</a>
+<a href="5 Mga Kabanata.html#33">Kabanata 33</a>
+<a href="5 Mga Kabanata.html#34">Kabanata 34</a>
+<a href="5 Mga Kabanata.html#35">Kabanata 35</a>
+<a href="5 Mga Kabanata.html#36">Kabanata 36</a>
+<a href="5 Mga Kabanata.html#37">Kabanata 37</a>
+<a href="5 Mga Kabanata.html#38">Kabanata 38</a>
+<a href="5 Mga Kabanata.html#39">Kabanata 39</a>
+
+
+
+</div> 
+
+
+</ul>
+</font>
+</div>
+
+
+
+<div class="stem-wrapper">
+<div class="stem" style="right: 1311px"></div>
+<div class="stem-background"></div>
+</div>
+<header class="section header">
+<div class="section-inner">
+
+<div class="master-head" style="height: 1307px">
+<class="page-title"><div class="mask pseudo">
+<a href="#" class="style2" style="left: -59px; top: 138px; height: 145px;">
+<img src="3.7.1%20Title.png" alt="El Fili" width="780" height="150" />
+</a>
+</div>
+<p class="style13">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<img alt="" src="3.2.2%20White.png" width="722" height="654" style="position: absolute; left: 681px; top: 646px" class="style17"><br><br><br><br>
+</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style13">
+<img alt="" src="3.7.3 Layunin.jpg" width="643" height="468" style="position: absolute; left: 719px; top: 783px"></p>
+<p class="style13">&nbsp;</p>
+<p class="style13">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style15">&nbsp;</p>
+<p class="style16" style="position: relative; left: -17px; top: 17px">
+<img alt="" src="paunang%20pagtataya.png" width="828" height="152" style="position: absolute; left: 36px; top: -41px"></p>
+
+<img alt="" src="3.3.4 Si Basilio.jpg" width="713" height="655" style="position: absolute; left: -3px; top: 647px; z-index: 9;"><p class="style14" style="position: absolute; left: 1080px; top: 1195px">
+&nbsp;<a href="#two"><class onclick="topFunction()" class="scroll-button"><font color="black" size="4" face="century gothic"><span class="style5">Magpatuloy</span></button>
+ 
+</p>
+</header>
+<header class="section header" id="two">
+<div class="master-head">
+				<h1 class="page-title" style="font-family: 'Old English Text MT'">
+				&nbsp;</h1>
+</div>
+ 
+</div>
+<!-- section-inner -->
+</header>
+<!-- header -->
+
+<div class="section main-content" style="left: 0px; top: 0px">
+<div class="section-inner">
+
+<div class="stem-padding"></div>
+
+<div class="post-wrapper">
+
+<article class="post Scroll-Quill" data-stem-color="green" id="two">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div id="page-wrap">
+</div>
+<div class="post-content" style="color: #112C30">
+<span class="style7">1. Isang kilalang binata dahil sa kanyang panggagamot at 
+pag-aaral sa medisina.</span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #fff; font-size: large; margin-top: 10px;">
+A. Simoun <br>
+B. Basilio <br>
+C. Isagani <br>
+D. Kapitan Tiyago <br>
+<p class="meta" style="color: white; font-size: large; margin-top: 10px;">
+
+
+
+<a href="#three" class="next"> »</a> 
+
+</div>
+
+</div>
+</article>
+
+
+
+<article class="post Scroll-Calendar" data-stem-color="green" id="three">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div id="page-wrap">
+</div>
+<div class="post-content">
+&nbsp; 
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">2. Isang binata na kilala sa pagiging makata, nakapagtapos 
+din siya ng pag-aaral sa ateneo. </span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">A. 
+Isagani <br>
+B. Simoun <br>
+C. Basilio <br>
+D. Sibyla <br>
+<br>
+
+<a href="#three" class="next"> »</a> 
+
+</p>
+
+</div>
+
+</div>
+</div>
+</article>
+
+<article class="post Scroll-Quillink" data-stem-color="yellow" id="four">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div class="post-content">
+
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">3. Isa siyang maganda, mayaman, at may pinag-aralang babae. 
+Si Donya Victorina ay ang kanyang tiya. </span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: White; font-size: large; margin-top: 10px;">A. 
+Espadaña <br>
+B. Geronima <br>
+C. Juliana de dios <br>
+D. Paula Gomez <br>
+<br>
+<br>
+
+
+<a href="#four" class="next"> »</a> 
+
+</p>
+
+</div>
+
+</article>
+
+<article class="post Scroll-Calendar" data-stem-color="white" id="five">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div class="post-content">
+
+<p class="meta" style="color: #cdad2d"><span class="style1">
+
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">4. Ang nagsabi na kaya tamad ang mga pilipino ay dahil 
+pala-inom sila ng tubig at di ng serbesa.</span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">
+A. Padre Sybila <br>
+B. Simoun <br>
+C. Basilio <br>
+D. Padre Camorra
+&nbsp;<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">
+
+<a href="#five" class="next"> »</a> 
+
+</div>
+</article>
+
+<article class="post Scroll-Quill" data-stem-color="yellow" id="six">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div class="post-content">
+
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">5. Kanino nagtanong si Ben Zayb patungkol sa napatay na 
+isang Guevarra, Navarra, o Ibarra? </span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">A. 
+Kapitan Tiyago <br>
+B. Padre Salvi <br>
+C. Simoun <br>
+D. Florentino<br>
+<br>
+
+
+<a href="#six" class="next"> »</a> 
+
+</div>
+</article>
+
+<article class="post Scroll-Quillink" data-stem-color="white" id="seven">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div class="post-content">
+
+<p class="meta" style="color: #cdad2d"></span><span class="style1">
+
+
+<span class="style1">
+
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">6. </span></span></span><span class="style7">Sino ang 
+nakadatnan sa mga nagtatawanan na prayle sa kubyerta? </span>
+
+
+<span class="style1">
+
+
+</h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">
+A. Simoun <br>
+B. Padre Florentino <br>
+C. Donya Geronimo <br>
+D. Padre Sibyla <p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">
+
+<a href="#seven" class="next"> »</a> 
+
+</div>
+</article>
+
+
+<article class="post Scroll-Quill" data-stem-color="green" id="eight">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div id="page-wrap">
+</div>
+<div class="post-content" style="color: #112C30">
+<span class="style7">7. Ang naghanap sa bakas ng pagkamatay sa tubig labing 
+tatlong taon matapos mangyari iyon. </span></h2>
+<div class="entry-content">
+</p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">A. 
+Donya Victorina <br>
+B. Padre Sibyla <br>
+C. Kapitan Tiyago <br>
+D. Ben Zayb <br>
+<br>
+<br>
+
+<a href="#eight" class="next"> »</a> 
+
+</div>
+
+</div>
+</article>
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">
+
+<article class="post Scroll-Calendar" data-stem-color="green" id="nine">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div id="page-wrap">
+</div>
+<div class="post-content">
+&nbsp; 
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">8. Siya ang mabuting kaibigan na naging dahilan na 
+pagkakalungkot ni Padre Florentino dahil sa kanyang pagkakalisan. </span></h2>
+<div class="entry-content">
+</p>
+</span>
+<span class="style18">
+
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">A. 
+Simoun <br>
+B. Don Tiburcio <br>
+C. Padre Sibyla <br>
+D. Kapitan Tiyago </p>
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;"> </span>
+<span class="style7">
+
+<a href="#nine" class="next"> »</a> 
+
+</div>
+
+</div>
+</div>
+</article>
+
+<article class="post Scroll-Quillink" data-stem-color="yellow" id="ten">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+<div class="post-content">
+
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">9. Siya ay nakatanggap ng sulat mula sa tinyente na 
+sinasabing dadakipin ang isa nitong malapit na kaibigan</span></h2>
+<div class="entry-content">
+</p>
+</span>
+
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;"></span>
+<span class="style19">A. Padre Florentino <br>
+B. Simoun <br>
+C. Don Tiburcio <br>
+D. Basilio </span><span class="style1">
+
+
+<span class="style7"><br>
+<br>
+<br>
+
+<a href="#eleven" class="next"> »</a> 
+
+</div>
+
+</article>
+
+<article class="post Scroll-Calendar" data-stem-color="white" id="eleven">
+<div class="stem-overlay">
+<div class="icon"></div>
+<div class="stem-mask"></div>
+</div>
+
+<div class="post-content" style="color: #112C30">
+<span class="style7">10. </span><span class="style22">Saang kontinente 
+nanggaling si Simoun bago bumalik ng pilipinas? </span></h2>
+<div class="entry-content">
+</p>
+</span>
+
+</span>
+
+<p class="meta" style="color: #FFFFFF; font-size: large; margin-top: 10px;">
+<span class="style21">A. Hilagang Amerika <br>
+B. Asya <br>
+C. Europa <br>
+D. Timog Amerika</span><span class="style1"><span class="style7"><br>
+<br>
+<br>
+
+<a href="#eleven" class="next"> »</a> 
+
+</div>
+
+</article>
+
+</div>
+</article>
+
+
+
+<div class="single-stem-icon scroll-to-top trigger-scroll-to-top"></div>
+
+</div> <!-- section-inner -->
+</div>
+</span>
+<span class="style9"> 
+
+
+<span class="style1">
+
+
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+
+</font><span class="style1"><span class="style1">
+
+
+<span class="style1">
+
+
+<span class="style1">
+
+
+<span class="style7">
+
+ 
+
+
+</html>
+
